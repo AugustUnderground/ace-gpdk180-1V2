@@ -56,15 +56,14 @@ BALUN (IND INCM INPOL INNOL) ideal_balun
 VID  (IND  CM) vsource type=dc dc=vid mag=1
 VICM (INCM CM) vsource type=dc dc=vicm
 
-// 'op3' in XH035-3V3 as subckt
 subckt op B INP INN O VDD VSS
     // Output NMOS Current Mirror
     MNCM31  (Z  Z   VSS VSS) nmos1 m=Mcm31 w=Wcm3 l=Lcm3 
     MNCM32  (O  Z   VSS VSS) nmos1 m=Mcm32 w=Wcm3 l=Lcm3 
 
     // Differential Pair
-    MND12   (X  INP CM  VSS) nmos1 m=Md w=Wd l=Wd 
-    MND11   (Y  INN CM  VSS) nmos1 m=Md w=Wd l=Wd 
+    MND12   (X  INP CM  VSS) nmos1 m=Md w=Wd l=Ld 
+    MND11   (Y  INN CM  VSS) nmos1 m=Md w=Wd l=Ld 
 
     // Biasing Current Mirror
     MNCM11  (B  B   VSS VSS) nmos1 m=Mcm11 w=Wcm1 l=Lcm1 
