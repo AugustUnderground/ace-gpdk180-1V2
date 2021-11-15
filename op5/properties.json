@@ -1089,245 +1089,565 @@
           "reference":"totalOutput.dcOp",
           "comment" : "Systematic Offset"
         },
-        "MNCM11/avt/contribution":{
-          "unit":"V",
-          "reference":"DUT.MNCM11.sky130_fd_pr__nfet_01v8__vth0_slope_spectre(m).Contribution",
+        "MNCM11/dvth/contribution":{
+            "unit": "v",
+            "reference": "DUT.MNCM11.dvthn(m).Contribution",
         },
-        "MNCM11/avt/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MNCM11.sky130_fd_pr__nfet_01v8__vth0_slope_spectre(m).Sensitivity",
+        "MNCM11/dvth/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MNCM11.dvthn(m).Sensitivity",
         },
-        "MNCM11/ato/contribution":{
-          "unit":"V",
-          "reference":"DUT.MNCM11.sky130_fd_pr__nfet_01v8__toxe_slope_spectre(m).Contribution",
+        "MNCM11/tox/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM11.toxn(m).Contribution",
         },
-        "MNCM11/ato/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MNCM11.sky130_fd_pr__nfet_01v8__toxe_slope_spectre(m).Sensitivity",
-        },        
-        "MNCM11/avo/contribution":{
-          "unit":"V",
-          "reference":"DUT.MNCM11.sky130_fd_pr__nfet_01v8__voff_slope_spectre(m).Contribution",
+        "MNCM11/tox/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM11.toxn(m).Sensitivity",
         },
-        "MNCM11/avo/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MNCM11.sky130_fd_pr__nfet_01v8__voff_slope_spectre(m).Sensitivity",
-        },        
-        "MNCM12/avt/contribution":{
-          "unit":"V",
-          "reference":"DUT.MNCM12.sky130_fd_pr__nfet_01v8__vth0_slope_spectre(m).Contribution",
+        "MNCM11/dxl/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM11.dxln(m).Contribution",
         },
-        "MNCM12/avt/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MNCM12.sky130_fd_pr__nfet_01v8__vth0_slope_spectre(m).Sensitivity",
+        "MNCM11/dxl/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM11.dxln(m).Sensitivity",
         },
-        "MNCM12/ato/contribution":{
-          "unit":"V",
-          "reference":"DUT.MNCM12.sky130_fd_pr__nfet_01v8__toxe_slope_spectre(m).Contribution",
+        "MNCM11/dxw/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM11.dxwn(m).Contribution",
         },
-        "MNCM12/ato/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MNCM12.sky130_fd_pr__nfet_01v8__toxe_slope_spectre(m).Sensitivity",
+        "MNCM11/dxw/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM11.dxwn(m).Sensitivity",
         },
-        "MNCM12/avo/contribution":{
-          "unit":"V",
-          "reference":"DUT.MNCM12.sky130_fd_pr__nfet_01v8__voff_slope_spectre(m).Contribution",
+        "MNCM11/hdif/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM11.hdifn(m).Contribution",
         },
-        "MNCM12/avo/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MNCM12.sky130_fd_pr__nfet_01v8__voff_slope_spectre(m).Sensitivity",
+        "MNCM11/hdif/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM11.hdifn(m).Sensitivity",
         },
-        "MND11/avt/contribution":{
-          "unit":"V",
-          "reference":"DUT.MND11.sky130_fd_pr__nfet_01v8__vth0_slope_spectre(m).Contribution",
+        "MNCM12/dvth/contribution":{
+            "unit": "v",
+            "reference": "DUT.MNCM12.dvthn(m).Contribution",
         },
-        "MND11/avt/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MND11.sky130_fd_pr__nfet_01v8__vth0_slope_spectre(m).Sensitivity",
+        "MNCM12/dvth/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MNCM12.dvthn(m).Sensitivity",
         },
-        "MND11/ato/contribution":{
-          "unit":"V",
-          "reference":"DUT.MND11.sky130_fd_pr__nfet_01v8__toxe_slope_spectre(m).Contribution",
+        "MNCM12/tox/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM12.toxn(m).Contribution",
         },
-        "MND11/ato/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MND11.sky130_fd_pr__nfet_01v8__toxe_slope_spectre(m).Sensitivity",
+        "MNCM12/tox/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM12.toxn(m).Sensitivity",
         },
-        "MND11/avo/contribution":{
-          "unit":"V",
-          "reference":"DUT.MND11.sky130_fd_pr__nfet_01v8__voff_slope_spectre(m).Contribution",
+        "MNCM12/dxl/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM12.dxln(m).Contribution",
         },
-        "MND11/avo/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MND11.sky130_fd_pr__nfet_01v8__voff_slope_spectre(m).Sensitivity",
+        "MNCM12/dxl/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM12.dxln(m).Sensitivity",
         },
-        "MND12/avt/contribution":{
-          "unit":"V",
-          "reference":"DUT.MND12.sky130_fd_pr__nfet_01v8__vth0_slope_spectre(m).Contribution",
+        "MNCM12/dxw/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM12.dxwn(m).Contribution",
         },
-        "MND12/avt/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MND12.sky130_fd_pr__nfet_01v8__vth0_slope_spectre(m).Sensitivity",
+        "MNCM12/dxw/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM12.dxwn(m).Sensitivity",
         },
-        "MND12/ato/contribution":{
-          "unit":"V",
-          "reference":"DUT.MND12.sky130_fd_pr__nfet_01v8__toxe_slope_spectre(m).Contribution",
+        "MNCM12/hdif/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM12.hdifn(m).Contribution",
         },
-        "MND12/ato/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MND12.sky130_fd_pr__nfet_01v8__toxe_slope_spectre(m).Sensitivity",
+        "MNCM12/hdif/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM12.hdifn(m).Sensitivity",
         },
-        "MND12/avo/contribution":{
-          "unit":"V",
-          "reference":"DUT.MND12.sky130_fd_pr__nfet_01v8__voff_slope_spectre(m).Contribution",
+        "MNCM13/dvth/contribution":{
+            "unit": "v",
+            "reference": "DUT.MNCM13.dvthn(m).Contribution",
         },
-        "MND12/avo/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MND12.sky130_fd_pr__nfet_01v8__voff_slope_spectre(m).Sensitivity",
+        "MNCM13/dvth/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MNCM13.dvthn(m).Sensitivity",
         },
-        "MNCM31/avt/contribution":{
-          "unit":"V",
-          "reference":"DUT.MNCM31.sky130_fd_pr__nfet_01v8__vth0_slope_spectre(m).Contribution",
+        "MNCM13/tox/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM13.toxn(m).Contribution",
         },
-        "MNCM31/avt/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MNCM31.sky130_fd_pr__nfet_01v8__vth0_slope_spectre(m).Sensitivity",
+        "MNCM13/tox/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM13.toxn(m).Sensitivity",
         },
-        "MNCM31/ato/contribution":{
-          "unit":"V",
-          "reference":"DUT.MNCM31.sky130_fd_pr__nfet_01v8__toxe_slope_spectre(m).Contribution",
+        "MNCM13/dxl/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM13.dxln(m).Contribution",
         },
-        "MNCM31/ato/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MNCM31.sky130_fd_pr__nfet_01v8__toxe_slope_spectre(m).Sensitivity",
-        },        
-        "MNCM31/avo/contribution":{
-          "unit":"V",
-          "reference":"DUT.MNCM31.sky130_fd_pr__nfet_01v8__voff_slope_spectre(m).Contribution",
+        "MNCM13/dxl/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM13.dxln(m).Sensitivity",
         },
-        "MNCM31/avo/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MNCM31.sky130_fd_pr__nfet_01v8__voff_slope_spectre(m).Sensitivity",
-        },        
-        "MNCM32/avt/contribution":{
-          "unit":"V",
-          "reference":"DUT.MNCM32.sky130_fd_pr__nfet_01v8__vth0_slope_spectre(m).Contribution",
+        "MNCM13/dxw/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM13.dxwn(m).Contribution",
         },
-        "MNCM32/avt/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MNCM32.sky130_fd_pr__nfet_01v8__vth0_slope_spectre(m).Sensitivity",
+        "MNCM13/dxw/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM13.dxwn(m).Sensitivity",
         },
-        "MNCM32/ato/contribution":{
-          "unit":"V",
-          "reference":"DUT.MNCM32.sky130_fd_pr__nfet_01v8__toxe_slope_spectre(m).Contribution",
+        "MNCM13/hdif/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM13.hdifn(m).Contribution",
         },
-        "MNCM32/ato/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MNCM32.sky130_fd_pr__nfet_01v8__toxe_slope_spectre(m).Sensitivity",
+        "MNCM13/hdif/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM13.hdifn(m).Sensitivity",
         },
-        "MNCM32/avo/contribution":{
-          "unit":"V",
-          "reference":"DUT.MNCM32.sky130_fd_pr__nfet_01v8__voff_slope_spectre(m).Contribution",
+        "MNCM31/dvth/contribution":{
+            "unit": "v",
+            "reference": "DUT.MNCM31.dvthn(m).Contribution",
         },
-        "MNCM32/avo/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MNCM32.sky130_fd_pr__nfet_01v8__voff_slope_spectre(m).Sensitivity",
+        "MNCM31/dvth/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MNCM31.dvthn(m).Sensitivity",
         },
-   "MPCM222/vth0/contribution":{
-          "unit":"V",
-          "reference":"DUT.MPCM222.sky130_fd_pr__pfet_01v8__vth0_slope_spectre(m).Contribution",
+        "MNCM31/tox/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM31.toxn(m).Contribution",
         },
-        "MPCM222/vth0/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MPCM222.sky130_fd_pr__pfet_01v8__vth0_slope_spectre(m).Sensitivity",
+        "MNCM31/tox/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM31.toxn(m).Sensitivity",
         },
-        "MPCM222/toxe/contribution":{
-          "unit":"V",
-          "reference":"DUT.MPCM222.sky130_fd_pr__pfet_01v8__toxe_slope_spectre(m).Contribution",
+        "MNCM31/dxl/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM31.dxln(m).Contribution",
         },
-        "MPCM222/toxe/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MPCM222.sky130_fd_pr__pfet_01v8__toxe_slope_spectre(m).Sensitivity",
+        "MNCM31/dxl/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM31.dxln(m).Sensitivity",
         },
-        "MPCM222/nfactor/contribution":{
-          "unit":"V",
-          "reference":"DUT.MPCM222.sky130_fd_pr__pfet_01v8__nfactor_slope_spectre(m).Contribution",
+        "MNCM31/dxw/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM31.dxwn(m).Contribution",
         },
-        "MPCM222/nfactor/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MPCM222.sky130_fd_pr__pfet_01v8__nfactor_slope_spectre(m).Sensitivity",
+        "MNCM31/dxw/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM31.dxwn(m).Sensitivity",
         },
-        "MPCM221/vth0/contribution":{
-          "unit":"V",
-          "reference":"DUT.MPCM221.sky130_fd_pr__pfet_01v8__vth0_slope_spectre(m).Contribution",
+        "MNCM31/hdif/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM31.hdifn(m).Contribution",
         },
-        "MPCM221/vth0/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MPCM221.sky130_fd_pr__pfet_01v8__vth0_slope_spectre(m).Sensitivity",
+        "MNCM31/hdif/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM31.hdifn(m).Sensitivity",
         },
-        "MPCM221/toxe/contribution":{
-          "unit":"V",
-          "reference":"DUT.MPCM221.sky130_fd_pr__pfet_01v8__toxe_slope_spectre(m).Contribution",
+        "MNCM32/dvth/contribution":{
+            "unit": "v",
+            "reference": "DUT.MNCM32.dvthn(m).Contribution",
         },
-        "MPCM221/toxe/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MPCM221.sky130_fd_pr__pfet_01v8__toxe_slope_spectre(m).Sensitivity",
+        "MNCM32/dvth/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MNCM32.dvthn(m).Sensitivity",
         },
-        "MPCM221/nfactor/contribution":{
-          "unit":"V",
-          "reference":"DUT.MPCM221.sky130_fd_pr__pfet_01v8__nfactor_slope_spectre(m).Contribution",
+        "MNCM32/tox/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM32.toxn(m).Contribution",
         },
-        "MPCM221/nfactor/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MPCM221.sky130_fd_pr__pfet_01v8__nfactor_slope_spectre(m).Sensitivity",
+        "MNCM32/tox/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM32.toxn(m).Sensitivity",
         },
-        "MPCM212/vth0/contribution":{
-          "unit":"V",
-          "reference":"DUT.MPCM212.sky130_fd_pr__pfet_01v8__vth0_slope_spectre(m).Contribution",
+        "MNCM32/dxl/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM32.dxln(m).Contribution",
         },
-        "MPCM212/vth0/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MPCM212.sky130_fd_pr__pfet_01v8__vth0_slope_spectre(m).Sensitivity",
+        "MNCM32/dxl/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM32.dxln(m).Sensitivity",
         },
-        "MPCM212/toxe/contribution":{
-          "unit":"V",
-          "reference":"DUT.MPCM212.sky130_fd_pr__pfet_01v8__toxe_slope_spectre(m).Contribution",
+        "MNCM32/dxw/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM32.dxwn(m).Contribution",
         },
-        "MPCM212/toxe/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MPCM212.sky130_fd_pr__pfet_01v8__toxe_slope_spectre(m).Sensitivity",
+        "MNCM32/dxw/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM32.dxwn(m).Sensitivity",
         },
-        "MPCM212/nfactor/contribution":{
-          "unit":"V",
-          "reference":"DUT.MPCM212.sky130_fd_pr__pfet_01v8__nfactor_slope_spectre(m).Contribution",
+        "MNCM32/hdif/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM32.hdifn(m).Contribution",
         },
-        "MPCM212/nfactor/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MPCM212.sky130_fd_pr__pfet_01v8__nfactor_slope_spectre(m).Sensitivity",
+        "MNCM32/hdif/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM32.hdifn(m).Sensitivity",
         },
-        "MPCM211/vth0/contribution":{
-          "unit":"V",
-          "reference":"DUT.MPCM211.sky130_fd_pr__pfet_01v8__vth0_slope_spectre(m).Contribution",
+        "MND12/dvth/contribution":{
+            "unit": "v",
+            "reference": "DUT.MND12.dvthn(m).Contribution",
         },
-        "MPCM211/vth0/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MPCM211.sky130_fd_pr__pfet_01v8__vth0_slope_spectre(m).Sensitivity",
+        "MND12/dvth/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MND12.dvthn(m).Sensitivity",
         },
-        "MPCM211/toxe/contribution":{
-          "unit":"V",
-          "reference":"DUT.MPCM211.sky130_fd_pr__pfet_01v8__toxe_slope_spectre(m).Contribution",
+        "MND12/tox/contribution":{
+            "unit": "1",
+            "reference": "DUT.MND12.toxn(m).Contribution",
         },
-        "MPCM211/toxe/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MPCM211.sky130_fd_pr__pfet_01v8__toxe_slope_spectre(m).Sensitivity",
+        "MND12/tox/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MND12.toxn(m).Sensitivity",
         },
-        "MPCM211/nfactor/contribution":{
-          "unit":"V",
-          "reference":"DUT.MPCM211.sky130_fd_pr__pfet_01v8__nfactor_slope_spectre(m).Contribution",
+        "MND12/dxl/contribution":{
+            "unit": "1",
+            "reference": "DUT.MND12.dxln(m).Contribution",
         },
-        "MPCM211/nfactor/sensitivity":{
-          "unit":"1",
-          "reference":"DUT.MPCM211.sky130_fd_pr__pfet_01v8__nfactor_slope_spectre(m).Sensitivity",
+        "MND12/dxl/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MND12.dxln(m).Sensitivity",
+        },
+        "MND12/dxw/contribution":{
+            "unit": "1",
+            "reference": "DUT.MND12.dxwn(m).Contribution",
+        },
+        "MND12/dxw/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MND12.dxwn(m).Sensitivity",
+        },
+        "MND12/hdif/contribution":{
+            "unit": "1",
+            "reference": "DUT.MND12.hdifn(m).Contribution",
+        },
+        "MND12/hdif/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MND12.hdifn(m).Sensitivity",
+        },
+        "MND11/dvth/contribution":{
+            "unit": "v",
+            "reference": "DUT.MND11.dvthn(m).Contribution",
+        },
+        "MND11/dvth/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MND11.dvthn(m).Sensitivity",
+        },
+        "MND11/tox/contribution":{
+            "unit": "1",
+            "reference": "DUT.MND11.toxn(m).Contribution",
+        },
+        "MND11/tox/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MND11.toxn(m).Sensitivity",
+        },
+        "MND11/dxl/contribution":{
+            "unit": "1",
+            "reference": "DUT.MND11.dxln(m).Contribution",
+        },
+        "MND11/dxl/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MND11.dxln(m).Sensitivity",
+        },
+        "MND11/dxw/contribution":{
+            "unit": "1",
+            "reference": "DUT.MND11.dxwn(m).Contribution",
+        },
+        "MND11/dxw/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MND11.dxwn(m).Sensitivity",
+        },
+        "MND11/hdif/contribution":{
+            "unit": "1",
+            "reference": "DUT.MND11.hdifn(m).Contribution",
+        },
+        "MND11/hdif/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MND11.hdifn(m).Sensitivity",
+        },
+        "MPC1R/dvth/contribution":{
+            "unit": "v",
+            "reference": "DUT.MPC1R.dvthp(m).Contribution",
+        },
+        "MPC1R/dvth/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MPC1R.dvthp(m).Sensitivity",
+        },
+        "MPC1R/tox/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPC1R.toxp(m).Contribution",
+        },
+        "MPC1R/tox/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPC1R.toxp(m).Sensitivity",
+        },
+        "MPC1R/dxl/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPC1R.dxlp(m).Contribution",
+        },
+        "MPC1R/dxl/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPC1R.dxlp(m).Sensitivity",
+        },
+        "MPC1R/dxw/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPC1R.dxwp(m).Contribution",
+        },
+        "MPC1R/dxw/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPC1R.dxwp(m).Sensitivity",
+        },
+        "MPC1R/hdif/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPC1R.hdifp(m).Contribution",
+        },
+        "MPC1R/hdif/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPC1R.hdifp(m).Sensitivity",
+        },
+        "MPC12/dvth/contribution":{
+            "unit": "v",
+            "reference": "DUT.MPC12.dvthp(m).Contribution",
+        },
+        "MPC12/dvth/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MPC12.dvthp(m).Sensitivity",
+        },
+        "MPC12/tox/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPC12.toxp(m).Contribution",
+        },
+        "MPC12/tox/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPC12.toxp(m).Sensitivity",
+        },
+        "MPC12/dxl/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPC12.dxlp(m).Contribution",
+        },
+        "MPC12/dxl/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPC12.dxlp(m).Sensitivity",
+        },
+        "MPC12/dxw/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPC12.dxwp(m).Contribution",
+        },
+        "MPC12/dxw/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPC12.dxwp(m).Sensitivity",
+        },
+        "MPC12/hdif/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPC12.hdifp(m).Contribution",
+        },
+        "MPC12/hdif/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPC12.hdifp(m).Sensitivity",
+        },
+        "MPC11/dvth/contribution":{
+            "unit": "v",
+            "reference": "DUT.MPC11.dvthp(m).Contribution",
+        },
+        "MPC11/dvth/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MPC11.dvthp(m).Sensitivity",
+        },
+        "MPC11/tox/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPC11.toxp(m).Contribution",
+        },
+        "MPC11/tox/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPC11.toxp(m).Sensitivity",
+        },
+        "MPC11/dxl/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPC11.dxlp(m).Contribution",
+        },
+        "MPC11/dxl/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPC11.dxlp(m).Sensitivity",
+        },
+        "MPC11/dxw/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPC11.dxwp(m).Contribution",
+        },
+        "MPC11/dxw/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPC11.dxwp(m).Sensitivity",
+        },
+        "MPC11/hdif/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPC11.hdifp(m).Contribution",
+        },
+        "MPC11/hdif/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPC11.hdifp(m).Sensitivity",
+        },
+        "MPCM222/dvth/contribution":{
+            "unit": "v",
+            "reference": "DUT.MPCM222.dvthp(m).Contribution",
+        },
+        "MPCM222/dvth/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MPCM222.dvthp(m).Sensitivity",
+        },
+        "MPCM222/tox/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM222.toxp(m).Contribution",
+        },
+        "MPCM222/tox/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM222.toxp(m).Sensitivity",
+        },
+        "MPCM222/dxl/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM222.dxlp(m).Contribution",
+        },
+        "MPCM222/dxl/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM222.dxlp(m).Sensitivity",
+        },
+        "MPCM222/dxw/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM222.dxwp(m).Contribution",
+        },
+        "MPCM222/dxw/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM222.dxwp(m).Sensitivity",
+        },
+        "MPCM222/hdif/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM222.hdifp(m).Contribution",
+        },
+        "MPCM222/hdif/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM222.hdifp(m).Sensitivity",
+        },
+        "MPCM221/dvth/contribution":{
+            "unit": "v",
+            "reference": "DUT.MPCM221.dvthp(m).Contribution",
+        },
+        "MPCM221/dvth/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MPCM221.dvthp(m).Sensitivity",
+        },
+        "MPCM221/tox/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM221.toxp(m).Contribution",
+        },
+        "MPCM221/tox/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM221.toxp(m).Sensitivity",
+        },
+        "MPCM221/dxl/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM221.dxlp(m).Contribution",
+        },
+        "MPCM221/dxl/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM221.dxlp(m).Sensitivity",
+        },
+        "MPCM221/dxw/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM221.dxwp(m).Contribution",
+        },
+        "MPCM221/dxw/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM221.dxwp(m).Sensitivity",
+        },
+        "MPCM221/hdif/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM221.hdifp(m).Contribution",
+        },
+        "MPCM221/hdif/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM221.hdifp(m).Sensitivity",
+        },
+        "MPCM212/dvth/contribution":{
+            "unit": "v",
+            "reference": "DUT.MPCM212.dvthp(m).Contribution",
+        },
+        "MPCM212/dvth/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MPCM212.dvthp(m).Sensitivity",
+        },
+        "MPCM212/tox/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM212.toxp(m).Contribution",
+        },
+        "MPCM212/tox/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM212.toxp(m).Sensitivity",
+        },
+        "MPCM212/dxl/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM212.dxlp(m).Contribution",
+        },
+        "MPCM212/dxl/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM212.dxlp(m).Sensitivity",
+        },
+        "MPCM212/dxw/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM212.dxwp(m).Contribution",
+        },
+        "MPCM212/dxw/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM212.dxwp(m).Sensitivity",
+        },
+        "MPCM212/hdif/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM212.hdifp(m).Contribution",
+        },
+        "MPCM212/hdif/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM212.hdifp(m).Sensitivity",
+        },
+        "MPCM211/dvth/contribution":{
+            "unit": "v",
+            "reference": "DUT.MPCM211.dvthp(m).Contribution",
+        },
+        "MPCM211/dvth/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MPCM211.dvthp(m).Sensitivity",
+        },
+        "MPCM211/tox/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM211.toxp(m).Contribution",
+        },
+        "MPCM211/tox/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM211.toxp(m).Sensitivity",
+        },
+        "MPCM211/dxl/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM211.dxlp(m).Contribution",
+        },
+        "MPCM211/dxl/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM211.dxlp(m).Sensitivity",
+        },
+        "MPCM211/dxw/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM211.dxwp(m).Contribution",
+        },
+        "MPCM211/dxw/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM211.dxwp(m).Sensitivity",
+        },
+        "MPCM211/hdif/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM211.hdifp(m).Contribution",
+        },
+        "MPCM211/hdif/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM211.hdifp(m).Sensitivity",
         }
       },
 
