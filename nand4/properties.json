@@ -1,0 +1,76 @@
+{
+  "environment":"Nand4Environment",
+  "parameters":
+  {
+    "vdd":{
+      "init":1.2,
+      "comment":"supply voltage"
+    },
+    "Wn3":{
+      "min":0.42,
+      "init":18.5,
+      "grid":0.05,
+      "max":100,
+      "sizing":true
+    },
+    "Wn2":{
+      "min":0.42,
+      "init":20,
+      "grid":0.05,
+      "max":100,
+      "sizing":true
+    },
+    "Wn1":{
+      "min":0.42,
+      "init":7.7,
+      "grid":0.05,
+      "max":100,
+      "sizing":true
+    },
+    "Wn0":{
+      "min":0.42,
+      "init":4.6,
+      "grid":0.05,
+      "max":100,
+      "sizing":true
+    },
+    "Wp":{
+      "min":0.42,
+      "init":10,
+      "grid":0.05,
+      "max":100,
+      "sizing":true
+    }
+  },
+  "performances":
+  {
+    "dc0":
+    {
+      "vs0":{
+        "unit":"V",
+        "comment" : "switching threshold of input I0"
+      }
+    },
+    "dc1":
+    {
+      "vs1":{
+        "unit":"V",
+        "comment" : "switching threshold of input I1"
+      }
+    },
+    "dc2":
+    {
+      "vs2":{
+        "unit":"V",
+        "comment" : "switching threshold of input I2"
+      }
+    },
+    "dc3":
+    {
+      "vs3":{
+        "unit":"V",
+        "comment" : "switching threshold of input I3"
+      }
+    }
+  }
+}

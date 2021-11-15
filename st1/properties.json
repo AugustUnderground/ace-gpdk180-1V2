@@ -1,0 +1,78 @@
+{
+  "environment":"SchmittTriggerEnvironment",
+  "parameters":
+  {
+    "vdd":{
+      "init":1.2,
+      "comment":"supply voltage"
+    },
+    "cl":{
+      "init":100e-15,
+      "comment":"load capacitance"
+    },
+    "Wn2":{
+      "min":0.42,
+      "init":3.0,
+      "grid":0.05,
+      "max":100,
+      "sizing":true
+    },
+    "Wn1":{
+      "min":0.42,
+      "init":3.0,
+      "grid":0.05,
+      "max":100,
+      "sizing":true
+    },
+    "Wn0":{
+      "min":0.42,
+      "init":3.0,
+      "grid":0.05,
+      "max":100,
+      "sizing":true
+    },
+    "Wp2":{
+      "min":0.42,
+      "init":3.0,
+      "grid":0.05,
+      "max":100,
+      "sizing":true
+    },
+    "Wp1":{
+      "min":0.42,
+      "init":3.0,
+      "grid":0.05,
+      "max":100,
+      "sizing":true
+    },
+    "Wp0":{
+      "min":0.42,
+      "init":3.0,
+      "grid":0.05,
+      "max":100,
+      "sizing":true
+    }
+  },
+  "performances":
+  {
+    "tran":
+    {
+      "v_il":{
+        "unit":"V",
+        "comment" : "lower threshold"
+      },
+      "v_ih":{
+        "unit":"V",
+        "comment" : "upper threshold"
+      },
+      "t_phl":{
+        "unit":"s",
+        "comment" : "propagation delay high-low"
+      },
+      "t_plh":{
+        "unit":"s",
+        "comment" : "propagation delay low-high"
+      }
+    }
+  }
+}

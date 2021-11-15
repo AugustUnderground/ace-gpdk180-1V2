@@ -1,0 +1,34 @@
+// characterization schmitt-trigger 'st1' in GPDK 180nm
+
+simulator lang=spectre
+global 0
+
+include "nmos1.scs" section=nom
+include "pmos1.scs" section=nom
+
+parameters T2=100p cl=100f T1=1 vdd=1.2                     \
+           Ln=0.18                 Lp=0.18                  \
+           Wn0=4.0 Wn1=6.0 Wn2=2.0 Wp0=8.0 Wp1=12.0 Wp2=4.0
+
+subckt st1 I O VDD VSS
+    MN2 (VDD O X   VSS) nmos1 m=1 w=Wn2 l=Ln 
+    MN1 (O   I X   VSS) nmos1 m=1 w=Wn1 l=Ln 
+    MN0 (X   I VSS VSS) nmos1 m=1 w=Wn0 l=Ln 
+    MP2 (VSS O Y   VDD) pmos1 m=1 w=Wp2 l=Lp 
+    MP0 (Y   I VDD VDD) pmos1 m=1 w=Wp0 l=Lp 
+    MP1 (O   I Y   VDD) pmos1 m=1 w=Wp1 l=Lp 
+ends st1
+
+I0 (I O VDD 0) st1
+V0 (I 0) vsource type=pwl wave=[ 0 0 T1 vdd (2*T1) 0 (3*T1) 0 (3*T1+T2) \
+        vdd (4*T1+T2) vdd (4*T1+2*T2) 0 (5*T1+2*T2) 0 ]
+V1 (VDD 0) vsource dc=vdd type=dc
+C0 (O 0) capacitor c=cl
+ic O=vdd
+
+save I O
+
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 \
+                         gmin=0 rforce=1 temp=27 tnom=27 scalem=1.0 scale=1u
+
+tran tran stop=5*T1+2*T2 errpreset=conservative
