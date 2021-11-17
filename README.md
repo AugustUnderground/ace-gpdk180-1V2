@@ -21,6 +21,10 @@ After cloning make sure to adjust the `pdk` symlink to suit your system.
 - [X] [op4](https://raw.githubusercontent.com/matthschw/ace/main/figures/op4.png) 
 - [X] [op5](https://raw.githubusercontent.com/matthschw/ace/main/figures/op5.png) 
 - [X] [op6](https://raw.githubusercontent.com/matthschw/ace/main/figures/op6.png) 
+- [ ] [op7](https://raw.githubusercontent.com/matthschw/ace/main/figures/op7.png) 
+- [X] [op8](https://raw.githubusercontent.com/matthschw/ace/main/figures/op8.png) 
+- [X] [op9](https://raw.githubusercontent.com/matthschw/ace/main/figures/op9.png) 
+- [ ] [op10](https://raw.githubusercontent.com/matthschw/ace/main/figures/op10.png) 
 - [X] [nand4](https://raw.githubusercontent.com/matthschw/ace/main/figures/nand4.png) 
 - [X] [st1](https://raw.githubusercontent.com/matthschw/ace/main/figures/st1.png) 
 
@@ -53,16 +57,7 @@ results. In case of errors, the corresponding `.log` files may give insight.
 ├── nand4.raw
 ├── op1.log
 ├── op1.raw
-├── op2.log
-├── op2.raw
-├── op3.log
-├── op3.raw
-├── op4.log
-├── op4.raw
-├── op5.log
-├── op5.raw
-├── op6.log
-├── op6.raw
+├── ...
 ├── st1.log
 └── st1.raw
 ```
