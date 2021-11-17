@@ -1,4 +1,4 @@
-// characterization single-ended opamp 'op8' in GPDK180 1V8
+// characterization single-ended opamp 'op8' in GPDK180-1V8
 
 simulator lang=spectre
 global 0
@@ -46,9 +46,9 @@ VISIN   (ICLSIN   CM) vsource type=sine  ampl=a0 freq=fin
 CL (OUT CM) capacitor c=cl
 RL (OUT CM) resistor  r=rl
 
-VO (OFI CM) vsource dc=vo type=dc
-L2 (OFI OF) dcfeed l=1u
-R2 (OFL  CM) resistor r=1M
+VO (OFI CM) vsource  type=dc dc=vo
+L2 (OFI OF) dcfeed   l=1u
+R2 (OFL CM) resistor r=1M
 
 BALUN (IND INCM INPOL INNOL) ideal_balun
 
@@ -85,18 +85,17 @@ simulatorOptions options reltol=100e-6 vabstol=1e-6 iabstol=1e-12 \
                          temp=27 tnom=27 homotopy=all gmin=1e-12 rforce=1 \
                          save=selected dc_pivot_check=yes scale=1u
 
-save DUT.M*:gm  DUT.M*:gds   DUT.M*:id  DUT.M*:gmoverid     \
-     DUT.M*:fug DUT.M*:vdsat DUT.M*:vgs DUT.M*:vds          \
-     DUT.M*:vbs DUT.M*:gmb   DUT.M*:vth DUT.M*:self_gain    \
-     DUT.X DUT.Y DUT.B DUT.CM DUT.U DUT.V DUT.W DUT.Z       \
-     DUT:VDD DUT:VSS DUT:O VDD VSS OUT OUT_IDEAL INN INP    \
+save DUT.M*:gm    DUT.M*:gds DUT.M*:gmb DUT.M*:fug DUT.M*:id  DUT.M*:gmoverid  \
+     DUT.M*:vdsat DUT.M*:vgs DUT.M*:vds DUT.M*:vth DUT.M*:vbs DUT.M*:self_gain \
+     DUT.X DUT.Y DUT.B DUT.CM DUT.U DUT.V DUT.W DUT.Z DUT.S DUT.T              \
+     DUT:VDD DUT:VSS DUT:O VDD VSS OUT OUT_IDEAL INN INP
 
-fb1 alter dev=INPSW param=position value=1
-fb2 alter dev=INNSW param=position value=1
-fb3 alter dev=OUTSW param=position value=1
-fb4 alter param=vid value=0
-fb5 alter param=vo value=0
-fb6 alter param=a0 value=1
+fb1 alter param=position value=1 dev=INPSW
+fb2 alter param=position value=1 dev=INNSW
+fb3 alter param=position value=1 dev=OUTSW
+fb4 alter param=vid      value=0
+fb5 alter param=vo       value=0
+fb6 alter param=a0       value=1
 
 dcop dc save=selected title="dcop"
 
@@ -112,17 +111,17 @@ noise (OUT CM) noise start=1e-3 stop=1G iprobe=VIPULSE \
 fb7 alter param=a0 value=0.1
 dc1 dc param=vid start=-vsup*0.1 stop=vsup*0.1 lin=500 title="dc1"
 
-ol1 alter dev=INNSW param=position value=2
-ol2 alter dev=INPSW param=position value=3
-ol3 alter dev=OUTSW param=position value=2
+ol1 alter param=position value=2 dev=INNSW
+ol2 alter param=position value=3 dev=INPSW
+ol3 alter param=position value=2 dev=OUTSW
 
 xf (OUT CM) xf  start=1e-3 stop=1G dec=50 title="xf" annotate=no
 ac ac freq=1 param=vicm start=-vsup stop=vsup lin=1500 title="ac" annotate=no
 
 ol41 alter param=vid value=vs/2 
-ol42 alter param=vo value=-vsup/2
+ol42 alter param=vo  value=-vsup/2
 dc3 dc title="dc3"
 
 ol51 alter param=vid value=-vs/2
-ol52 alter param=vo value=vsup/2
+ol52 alter param=vo  value=vsup/2
 dc4 dc title="dc4"
