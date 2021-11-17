@@ -43,6 +43,13 @@
       "grid":0.025,
       "sizing":true
     },
+    "Lcm1":{
+      "min":0.18,
+      "init":0.5,
+      "max":20,
+      "grid":0.025,
+      "sizing":true
+    },
     "Lcm2":{
       "min":0.18,
       "init":0.5,
