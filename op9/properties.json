@@ -1,0 +1,2228 @@
+{
+  "environment":"SingleEndedOpampEnvironment",
+  "parameters":
+  {
+    "vs":{
+      "init":0.5,
+      "comment":"step in differential input voltage to simulate slewing behaviour"
+    },
+    "cl":{
+      "init":5e-12,
+      "comment":"load capacitance"
+    },
+    "rl":{
+      "init":100e6,
+      "comment":"load resistance"
+    },
+    "i0":{
+      "init":3e-6,
+      "comment":"biasing current"
+    },
+    "vsup":{
+      "init":1.8,
+      "comment":"supply voltage"
+    },
+    "Lcm4":{
+      "min":0.18,
+      "init":0.5,
+      "max":20,
+      "grid":0.025,
+      "sizing":true
+    },
+    "Lls1":{
+      "min":0.18,
+      "init":0.5,
+      "max":20,
+      "grid":0.025,
+      "sizing":true
+    },
+    "Ld1":{
+      "min":0.18,
+      "init":0.5,
+      "max":20,
+      "grid":0.025,
+      "sizing":true
+    },
+    "Lcm2":{
+      "min":0.18,
+      "init":0.5,
+      "max":20,
+      "grid":0.025,
+      "sizing":true
+    },
+    "Lcm3":{
+      "min":0.18,
+      "init":0.5,
+      "max":20,
+      "grid":0.025,
+      "sizing":true
+    },
+    "Lr1":{
+      "min":0.18,
+      "init":0.5,
+      "max":20,
+      "grid":0.025,
+      "sizing":true
+    },
+    "Lr2":{
+      "min":0.18,
+      "init":0.5,
+      "max":20,
+      "grid":0.025,
+      "sizing":true
+    },
+    "Wd1":{
+      "min":0.42,
+      "init":3.0,
+      "grid":0.05,
+      "max":100,
+      "sizing":true
+    },
+    "Wcm4":{
+      "min":0.42,
+      "init":3.0,
+      "grid":0.05,
+      "max":100,
+      "sizing":true
+    },
+    "Wcm3":{
+      "min":0.42,
+      "init":3.0,
+      "grid":0.05,
+      "max":100,
+      "sizing":true
+    },
+    "Wcm2":{
+      "min":0.42,
+      "init":3.0,
+      "grid":0.05,
+      "max":100,
+      "sizing":true
+    },
+    "Wls1":{
+      "min":0.42,
+      "init":3.0,
+      "grid":0.05,
+      "max":100,
+      "sizing":true
+    },
+    "Wcm1":{
+      "min":0.42,
+      "init":3.0,
+      "grid":0.05,
+      "max":100,
+      "sizing":true
+    },
+    "Wr1":{
+      "min":0.42,
+      "init":3.0,
+      "grid":0.05,
+      "max":100,
+      "sizing":true
+    },
+    "Wr2":{
+      "min":0.42,
+      "init":3.0,
+      "grid":0.05,
+      "max":100,
+      "sizing":true
+    },
+    "Mcm41":{
+      "min":1,
+      "init":2,
+      "grid":1,
+      "max":3,
+      "sizing":true
+    },
+    "Mcm42":{
+      "min":1,
+      "init":1,
+      "grid":1,
+      "max":3,
+      "sizing":true
+    },
+    "Mcm43":{
+      "min":1,
+      "init":4,
+      "grid":1,
+      "max":25,
+      "sizing":true
+    },
+    "Mcm44":{
+      "min":1,
+      "init":4,
+      "grid":1,
+      "max":15,
+      "sizing":true
+    },
+    "Md1":{
+      "min":2,
+      "init":2,
+      "grid":1,
+      "max":2,
+      "sizing":true
+    },
+    "Mcm31":{
+      "min":1,
+      "init":1,
+      "grid":1,
+      "max":3,
+      "sizing":true
+    },
+    "Mcm32":{
+      "min":1,
+      "init":1,
+      "grid":1,
+      "max":3,
+      "sizing":true
+    },
+    "Mcm33":{
+      "min":2,
+      "init":4,
+      "grid":1,
+      "max":20,
+      "sizing":true
+    },
+    "Mcm34":{
+      "min":2,
+      "init":4,
+      "grid":1,
+      "max":20,
+      "sizing":true
+    },
+    "Mls1":{
+      "min":2,
+      "init":3,
+      "grid":1,
+      "max":20,
+      "sizing":true
+    },
+    "Mcm2":{
+      "min":2,
+      "init":3,
+      "grid":1,
+      "max":20,
+      "sizing":true
+    },
+    "Mcm1":{
+      "min":2,
+      "init":3,
+      "grid":1,
+      "max":20,
+      "sizing":true
+    }
+  },
+  "performances":
+    {
+      "dcop":
+      {
+        "MND11:gm": {
+            "unit": "S",
+            "reference": "DUT.MND11:gm",
+            "comment": "gm of MND11"
+        },
+        "MND11:gds": {
+            "unit": "S",
+            "reference": "DUT.MND11:gds",
+            "comment": "gds of MND11"
+        },
+        "MND11:id": {
+            "unit": "A",
+            "reference": "DUT.MND11:id",
+            "comment": "id of MND11"
+        },
+        "MND11:gmoverid": {
+            "unit": "1/V",
+            "reference": "DUT.MND11:gmoverid",
+            "comment": "gmoverid of MND11"
+        },
+        "MND11:fug": {
+            "unit": "Hz",
+            "reference": "DUT.MND11:fug",
+            "comment": "fug of MND11"
+        },
+        "MND11:vdsat": {
+            "unit": "V",
+            "reference": "DUT.MND11:vdsat",
+            "comment": "vdsat of MND11"
+        },
+        "MND11:vgs": {
+            "unit": "V",
+            "reference": "DUT.MND11:vgs",
+            "comment": "vgs of MND11"
+        },
+        "MND11:vds": {
+            "unit": "V",
+            "reference": "DUT.MND11:vds",
+            "comment": "vds of MND11"
+        },
+        "MND11:vbs": {
+            "unit": "V",
+            "reference": "DUT.MND11:vbs",
+            "comment": "vbs of MND11"
+        },
+        "MND11:gmb": {
+            "unit": "S",
+            "reference": "DUT.MND11:gmb",
+            "comment": "gmb of MND11"
+        },
+        "MND11:vth": {
+            "unit": "V",
+            "reference": "DUT.MND11:vth",
+            "comment": "vth of MND11"
+        },
+        "MND11:self_gain": {
+            "unit": "1",
+            "reference": "DUT.MND11:self_gain",
+            "comment": "self_gain of MND11"
+        },
+        "MND12:gm": {
+            "unit": "S",
+            "reference": "DUT.MND12:gm",
+            "comment": "gm of MND12"
+        },
+        "MND12:gds": {
+            "unit": "S",
+            "reference": "DUT.MND12:gds",
+            "comment": "gds of MND12"
+        },
+        "MND12:id": {
+            "unit": "A",
+            "reference": "DUT.MND12:id",
+            "comment": "id of MND12"
+        },
+        "MND12:gmoverid": {
+            "unit": "1/V",
+            "reference": "DUT.MND12:gmoverid",
+            "comment": "gmoverid of MND12"
+        },
+        "MND12:fug": {
+            "unit": "Hz",
+            "reference": "DUT.MND12:fug",
+            "comment": "fug of MND12"
+        },
+        "MND12:vdsat": {
+            "unit": "V",
+            "reference": "DUT.MND12:vdsat",
+            "comment": "vdsat of MND12"
+        },
+        "MND12:vgs": {
+            "unit": "V",
+            "reference": "DUT.MND12:vgs",
+            "comment": "vgs of MND12"
+        },
+        "MND12:vds": {
+            "unit": "V",
+            "reference": "DUT.MND12:vds",
+            "comment": "vds of MND12"
+        },
+        "MND12:vbs": {
+            "unit": "V",
+            "reference": "DUT.MND12:vbs",
+            "comment": "vbs of MND12"
+        },
+        "MND12:gmb": {
+            "unit": "S",
+            "reference": "DUT.MND12:gmb",
+            "comment": "gmb of MND12"
+        },
+        "MND12:vth": {
+            "unit": "V",
+            "reference": "DUT.MND12:vth",
+            "comment": "vth of MND12"
+        },
+        "MND12:self_gain": {
+            "unit": "1",
+            "reference": "DUT.MND12:self_gain",
+            "comment": "self_gain of MND12"
+        },
+        "MNCM11:gm": {
+            "unit": "S",
+            "reference": "DUT.MNCM11:gm",
+            "comment": "gm of MNCM11"
+        },
+        "MNCM11:gds": {
+            "unit": "S",
+            "reference": "DUT.MNCM11:gds",
+            "comment": "gds of MNCM11"
+        },
+        "MNCM11:id": {
+            "unit": "A",
+            "reference": "DUT.MNCM11:id",
+            "comment": "id of MNCM11"
+        },
+        "MNCM11:gmoverid": {
+            "unit": "1/V",
+            "reference": "DUT.MNCM11:gmoverid",
+            "comment": "gmoverid of MNCM11"
+        },
+        "MNCM11:fug": {
+            "unit": "Hz",
+            "reference": "DUT.MNCM11:fug",
+            "comment": "fug of MNCM11"
+        },
+        "MNCM11:vdsat": {
+            "unit": "V",
+            "reference": "DUT.MNCM11:vdsat",
+            "comment": "vdsat of MNCM11"
+        },
+        "MNCM11:vgs": {
+            "unit": "V",
+            "reference": "DUT.MNCM11:vgs",
+            "comment": "vgs of MNCM11"
+        },
+        "MNCM11:vds": {
+            "unit": "V",
+            "reference": "DUT.MNCM11:vds",
+            "comment": "vds of MNCM11"
+        },
+        "MNCM11:vbs": {
+            "unit": "V",
+            "reference": "DUT.MNCM11:vbs",
+            "comment": "vbs of MNCM11"
+        },
+        "MNCM11:gmb": {
+            "unit": "S",
+            "reference": "DUT.MNCM11:gmb",
+            "comment": "gmb of MNCM11"
+        },
+        "MNCM11:vth": {
+            "unit": "V",
+            "reference": "DUT.MNCM11:vth",
+            "comment": "vth of MNCM11"
+        },
+        "MNCM11:self_gain": {
+            "unit": "1",
+            "reference": "DUT.MNCM11:self_gain",
+            "comment": "self_gain of MNCM11"
+        },
+        "MNCM12:gm": {
+            "unit": "S",
+            "reference": "DUT.MNCM12:gm",
+            "comment": "gm of MNCM12"
+        },
+        "MNCM12:gds": {
+            "unit": "S",
+            "reference": "DUT.MNCM12:gds",
+            "comment": "gds of MNCM12"
+        },
+        "MNCM12:id": {
+            "unit": "A",
+            "reference": "DUT.MNCM12:id",
+            "comment": "id of MNCM12"
+        },
+        "MNCM12:gmoverid": {
+            "unit": "1/V",
+            "reference": "DUT.MNCM12:gmoverid",
+            "comment": "gmoverid of MNCM12"
+        },
+        "MNCM12:fug": {
+            "unit": "Hz",
+            "reference": "DUT.MNCM12:fug",
+            "comment": "fug of MNCM12"
+        },
+        "MNCM12:vdsat": {
+            "unit": "V",
+            "reference": "DUT.MNCM12:vdsat",
+            "comment": "vdsat of MNCM12"
+        },
+        "MNCM12:vgs": {
+            "unit": "V",
+            "reference": "DUT.MNCM12:vgs",
+            "comment": "vgs of MNCM12"
+        },
+        "MNCM12:vds": {
+            "unit": "V",
+            "reference": "DUT.MNCM12:vds",
+            "comment": "vds of MNCM12"
+        },
+        "MNCM12:vbs": {
+            "unit": "V",
+            "reference": "DUT.MNCM12:vbs",
+            "comment": "vbs of MNCM12"
+        },
+        "MNCM12:gmb": {
+            "unit": "S",
+            "reference": "DUT.MNCM12:gmb",
+            "comment": "gmb of MNCM12"
+        },
+        "MNCM12:vth": {
+            "unit": "V",
+            "reference": "DUT.MNCM12:vth",
+            "comment": "vth of MNCM12"
+        },
+        "MNCM12:self_gain": {
+            "unit": "1",
+            "reference": "DUT.MNCM12:self_gain",
+            "comment": "self_gain of MNCM12"
+        },
+        "MPCM21:gm": {
+            "unit": "S",
+            "reference": "DUT.MPCM21:gm",
+            "comment": "gm of MPCM21"
+        },
+        "MPCM21:gds": {
+            "unit": "S",
+            "reference": "DUT.MPCM21:gds",
+            "comment": "gds of MPCM21"
+        },
+        "MPCM21:id": {
+            "unit": "A",
+            "reference": "DUT.MPCM21:id",
+            "comment": "id of MPCM21"
+        },
+        "MPCM21:gmoverid": {
+            "unit": "1/V",
+            "reference": "DUT.MPCM21:gmoverid",
+            "comment": "gmoverid of MPCM21"
+        },
+        "MPCM21:fug": {
+            "unit": "Hz",
+            "reference": "DUT.MPCM21:fug",
+            "comment": "fug of MPCM21"
+        },
+        "MPCM21:vdsat": {
+            "unit": "V",
+            "reference": "DUT.MPCM21:vdsat",
+            "comment": "vdsat of MPCM21"
+        },
+        "MPCM21:vgs": {
+            "unit": "V",
+            "reference": "DUT.MPCM21:vgs",
+            "comment": "vgs of MPCM21"
+        },
+        "MPCM21:vds": {
+            "unit": "V",
+            "reference": "DUT.MPCM21:vds",
+            "comment": "vds of MPCM21"
+        },
+        "MPCM21:vbs": {
+            "unit": "V",
+            "reference": "DUT.MPCM21:vbs",
+            "comment": "vbs of MPCM21"
+        },
+        "MPCM21:gmb": {
+            "unit": "S",
+            "reference": "DUT.MPCM21:gmb",
+            "comment": "gmb of MPCM21"
+        },
+        "MPCM21:vth": {
+            "unit": "V",
+            "reference": "DUT.MPCM21:vth",
+            "comment": "vth of MPCM21"
+        },
+        "MPCM21:self_gain": {
+            "unit": "1",
+            "reference": "DUT.MPCM21:self_gain",
+            "comment": "self_gain of MPCM21"
+        },
+        "MPCM22:gm": {
+            "unit": "S",
+            "reference": "DUT.MPCM22:gm",
+            "comment": "gm of MPCM22"
+        },
+        "MPCM22:gds": {
+            "unit": "S",
+            "reference": "DUT.MPCM22:gds",
+            "comment": "gds of MPCM22"
+        },
+        "MPCM22:id": {
+            "unit": "A",
+            "reference": "DUT.MPCM22:id",
+            "comment": "id of MPCM22"
+        },
+        "MPCM22:gmoverid": {
+            "unit": "1/V",
+            "reference": "DUT.MPCM22:gmoverid",
+            "comment": "gmoverid of MPCM22"
+        },
+        "MPCM22:fug": {
+            "unit": "Hz",
+            "reference": "DUT.MPCM22:fug",
+            "comment": "fug of MPCM22"
+        },
+        "MPCM22:vdsat": {
+            "unit": "V",
+            "reference": "DUT.MPCM22:vdsat",
+            "comment": "vdsat of MPCM22"
+        },
+        "MPCM22:vgs": {
+            "unit": "V",
+            "reference": "DUT.MPCM22:vgs",
+            "comment": "vgs of MPCM22"
+        },
+        "MPCM22:vds": {
+            "unit": "V",
+            "reference": "DUT.MPCM22:vds",
+            "comment": "vds of MPCM22"
+        },
+        "MPCM22:vbs": {
+            "unit": "V",
+            "reference": "DUT.MPCM22:vbs",
+            "comment": "vbs of MPCM22"
+        },
+        "MPCM22:gmb": {
+            "unit": "S",
+            "reference": "DUT.MPCM22:gmb",
+            "comment": "gmb of MPCM22"
+        },
+        "MPCM22:vth": {
+            "unit": "V",
+            "reference": "DUT.MPCM22:vth",
+            "comment": "vth of MPCM22"
+        },
+        "MPCM22:self_gain": {
+            "unit": "1",
+            "reference": "DUT.MPCM22:self_gain",
+            "comment": "self_gain of MPCM22"
+        },
+        "MNCM41:gm": {
+            "unit": "S",
+            "reference": "DUT.MNCM41:gm",
+            "comment": "gm of MNCM41"
+        },
+        "MNCM41:gds": {
+            "unit": "S",
+            "reference": "DUT.MNCM41:gds",
+            "comment": "gds of MNCM41"
+        },
+        "MNCM41:id": {
+            "unit": "A",
+            "reference": "DUT.MNCM41:id",
+            "comment": "id of MNCM41"
+        },
+        "MNCM41:gmoverid": {
+            "unit": "1/V",
+            "reference": "DUT.MNCM41:gmoverid",
+            "comment": "gmoverid of MNCM41"
+        },
+        "MNCM41:fug": {
+            "unit": "Hz",
+            "reference": "DUT.MNCM41:fug",
+            "comment": "fug of MNCM41"
+        },
+        "MNCM41:vdsat": {
+            "unit": "V",
+            "reference": "DUT.MNCM41:vdsat",
+            "comment": "vdsat of MNCM41"
+        },
+        "MNCM41:vgs": {
+            "unit": "V",
+            "reference": "DUT.MNCM41:vgs",
+            "comment": "vgs of MNCM41"
+        },
+        "MNCM41:vds": {
+            "unit": "V",
+            "reference": "DUT.MNCM41:vds",
+            "comment": "vds of MNCM41"
+        },
+        "MNCM41:vbs": {
+            "unit": "V",
+            "reference": "DUT.MNCM41:vbs",
+            "comment": "vbs of MNCM41"
+        },
+        "MNCM41:gmb": {
+            "unit": "S",
+            "reference": "DUT.MNCM41:gmb",
+            "comment": "gmb of MNCM41"
+        },
+        "MNCM41:vth": {
+            "unit": "V",
+            "reference": "DUT.MNCM41:vth",
+            "comment": "vth of MNCM41"
+        },
+        "MNCM41:self_gain": {
+            "unit": "1",
+            "reference": "DUT.MNCM41:self_gain",
+            "comment": "self_gain of MNCM41"
+        },
+        "MNCM42:gm": {
+            "unit": "S",
+            "reference": "DUT.MNCM42:gm",
+            "comment": "gm of MNCM42"
+        },
+        "MNCM42:gds": {
+            "unit": "S",
+            "reference": "DUT.MNCM42:gds",
+            "comment": "gds of MNCM42"
+        },
+        "MNCM42:id": {
+            "unit": "A",
+            "reference": "DUT.MNCM42:id",
+            "comment": "id of MNCM42"
+        },
+        "MNCM42:gmoverid": {
+            "unit": "1/V",
+            "reference": "DUT.MNCM42:gmoverid",
+            "comment": "gmoverid of MNCM42"
+        },
+        "MNCM42:fug": {
+            "unit": "Hz",
+            "reference": "DUT.MNCM42:fug",
+            "comment": "fug of MNCM42"
+        },
+        "MNCM42:vdsat": {
+            "unit": "V",
+            "reference": "DUT.MNCM42:vdsat",
+            "comment": "vdsat of MNCM42"
+        },
+        "MNCM42:vgs": {
+            "unit": "V",
+            "reference": "DUT.MNCM42:vgs",
+            "comment": "vgs of MNCM42"
+        },
+        "MNCM42:vds": {
+            "unit": "V",
+            "reference": "DUT.MNCM42:vds",
+            "comment": "vds of MNCM42"
+        },
+        "MNCM42:vbs": {
+            "unit": "V",
+            "reference": "DUT.MNCM42:vbs",
+            "comment": "vbs of MNCM42"
+        },
+        "MNCM42:gmb": {
+            "unit": "S",
+            "reference": "DUT.MNCM42:gmb",
+            "comment": "gmb of MNCM42"
+        },
+        "MNCM42:vth": {
+            "unit": "V",
+            "reference": "DUT.MNCM42:vth",
+            "comment": "vth of MNCM42"
+        },
+        "MNCM42:self_gain": {
+            "unit": "1",
+            "reference": "DUT.MNCM42:self_gain",
+            "comment": "self_gain of MNCM42"
+        },
+        "MNCM43:gm": {
+            "unit": "S",
+            "reference": "DUT.MNCM43:gm",
+            "comment": "gm of MNCM43"
+        },
+        "MNCM43:gds": {
+            "unit": "S",
+            "reference": "DUT.MNCM43:gds",
+            "comment": "gds of MNCM43"
+        },
+        "MNCM43:id": {
+            "unit": "A",
+            "reference": "DUT.MNCM43:id",
+            "comment": "id of MNCM43"
+        },
+        "MNCM43:gmoverid": {
+            "unit": "1/V",
+            "reference": "DUT.MNCM43:gmoverid",
+            "comment": "gmoverid of MNCM43"
+        },
+        "MNCM43:fug": {
+            "unit": "Hz",
+            "reference": "DUT.MNCM43:fug",
+            "comment": "fug of MNCM43"
+        },
+        "MNCM43:vdsat": {
+            "unit": "V",
+            "reference": "DUT.MNCM43:vdsat",
+            "comment": "vdsat of MNCM43"
+        },
+        "MNCM43:vgs": {
+            "unit": "V",
+            "reference": "DUT.MNCM43:vgs",
+            "comment": "vgs of MNCM43"
+        },
+        "MNCM43:vds": {
+            "unit": "V",
+            "reference": "DUT.MNCM43:vds",
+            "comment": "vds of MNCM43"
+        },
+        "MNCM43:vbs": {
+            "unit": "V",
+            "reference": "DUT.MNCM43:vbs",
+            "comment": "vbs of MNCM43"
+        },
+        "MNCM43:gmb": {
+            "unit": "S",
+            "reference": "DUT.MNCM43:gmb",
+            "comment": "gmb of MNCM43"
+        },
+        "MNCM43:vth": {
+            "unit": "V",
+            "reference": "DUT.MNCM43:vth",
+            "comment": "vth of MNCM43"
+        },
+        "MNCM43:self_gain": {
+            "unit": "1",
+            "reference": "DUT.MNCM43:self_gain",
+            "comment": "self_gain of MNCM43"
+        },
+        "MNCM44:gm": {
+            "unit": "S",
+            "reference": "DUT.MNCM44:gm",
+            "comment": "gm of MNCM44"
+        },
+        "MNCM44:gds": {
+            "unit": "S",
+            "reference": "DUT.MNCM44:gds",
+            "comment": "gds of MNCM44"
+        },
+        "MNCM44:id": {
+            "unit": "A",
+            "reference": "DUT.MNCM44:id",
+            "comment": "id of MNCM44"
+        },
+        "MNCM44:gmoverid": {
+            "unit": "1/V",
+            "reference": "DUT.MNCM44:gmoverid",
+            "comment": "gmoverid of MNCM44"
+        },
+        "MNCM44:fug": {
+            "unit": "Hz",
+            "reference": "DUT.MNCM44:fug",
+            "comment": "fug of MNCM44"
+        },
+        "MNCM44:vdsat": {
+            "unit": "V",
+            "reference": "DUT.MNCM44:vdsat",
+            "comment": "vdsat of MNCM44"
+        },
+        "MNCM44:vgs": {
+            "unit": "V",
+            "reference": "DUT.MNCM44:vgs",
+            "comment": "vgs of MNCM44"
+        },
+        "MNCM44:vds": {
+            "unit": "V",
+            "reference": "DUT.MNCM44:vds",
+            "comment": "vds of MNCM44"
+        },
+        "MNCM44:vbs": {
+            "unit": "V",
+            "reference": "DUT.MNCM44:vbs",
+            "comment": "vbs of MNCM44"
+        },
+        "MNCM44:gmb": {
+            "unit": "S",
+            "reference": "DUT.MNCM44:gmb",
+            "comment": "gmb of MNCM44"
+        },
+        "MNCM44:vth": {
+            "unit": "V",
+            "reference": "DUT.MNCM44:vth",
+            "comment": "vth of MNCM44"
+        },
+        "MNCM44:self_gain": {
+            "unit": "1",
+            "reference": "DUT.MNCM44:self_gain",
+            "comment": "self_gain of MNCM44"
+        },
+        "MPCM31:gm": {
+            "unit": "S",
+            "reference": "DUT.MPCM31:gm",
+            "comment": "gm of MPCM31"
+        },
+        "MPCM31:gds": {
+            "unit": "S",
+            "reference": "DUT.MPCM31:gds",
+            "comment": "gds of MPCM31"
+        },
+        "MPCM31:id": {
+            "unit": "A",
+            "reference": "DUT.MPCM31:id",
+            "comment": "id of MPCM31"
+        },
+        "MPCM31:gmoverid": {
+            "unit": "1/V",
+            "reference": "DUT.MPCM31:gmoverid",
+            "comment": "gmoverid of MPCM31"
+        },
+        "MPCM31:fug": {
+            "unit": "Hz",
+            "reference": "DUT.MPCM31:fug",
+            "comment": "fug of MPCM31"
+        },
+        "MPCM31:vdsat": {
+            "unit": "V",
+            "reference": "DUT.MPCM31:vdsat",
+            "comment": "vdsat of MPCM31"
+        },
+        "MPCM31:vgs": {
+            "unit": "V",
+            "reference": "DUT.MPCM31:vgs",
+            "comment": "vgs of MPCM31"
+        },
+        "MPCM31:vds": {
+            "unit": "V",
+            "reference": "DUT.MPCM31:vds",
+            "comment": "vds of MPCM31"
+        },
+        "MPCM31:vbs": {
+            "unit": "V",
+            "reference": "DUT.MPCM31:vbs",
+            "comment": "vbs of MPCM31"
+        },
+        "MPCM31:gmb": {
+            "unit": "S",
+            "reference": "DUT.MPCM31:gmb",
+            "comment": "gmb of MPCM31"
+        },
+        "MPCM31:vth": {
+            "unit": "V",
+            "reference": "DUT.MPCM31:vth",
+            "comment": "vth of MPCM31"
+        },
+        "MPCM31:self_gain": {
+            "unit": "1",
+            "reference": "DUT.MPCM31:self_gain",
+            "comment": "self_gain of MPCM31"
+        },
+        "MPCM32:gm": {
+            "unit": "S",
+            "reference": "DUT.MPCM32:gm",
+            "comment": "gm of MPCM32"
+        },
+        "MPCM32:gds": {
+            "unit": "S",
+            "reference": "DUT.MPCM32:gds",
+            "comment": "gds of MPCM32"
+        },
+        "MPCM32:id": {
+            "unit": "A",
+            "reference": "DUT.MPCM32:id",
+            "comment": "id of MPCM32"
+        },
+        "MPCM32:gmoverid": {
+            "unit": "1/V",
+            "reference": "DUT.MPCM32:gmoverid",
+            "comment": "gmoverid of MPCM32"
+        },
+        "MPCM32:fug": {
+            "unit": "Hz",
+            "reference": "DUT.MPCM32:fug",
+            "comment": "fug of MPCM32"
+        },
+        "MPCM32:vdsat": {
+            "unit": "V",
+            "reference": "DUT.MPCM32:vdsat",
+            "comment": "vdsat of MPCM32"
+        },
+        "MPCM32:vgs": {
+            "unit": "V",
+            "reference": "DUT.MPCM32:vgs",
+            "comment": "vgs of MPCM32"
+        },
+        "MPCM32:vds": {
+            "unit": "V",
+            "reference": "DUT.MPCM32:vds",
+            "comment": "vds of MPCM32"
+        },
+        "MPCM32:vbs": {
+            "unit": "V",
+            "reference": "DUT.MPCM32:vbs",
+            "comment": "vbs of MPCM32"
+        },
+        "MPCM32:gmb": {
+            "unit": "S",
+            "reference": "DUT.MPCM32:gmb",
+            "comment": "gmb of MPCM32"
+        },
+        "MPCM32:vth": {
+            "unit": "V",
+            "reference": "DUT.MPCM32:vth",
+            "comment": "vth of MPCM32"
+        },
+        "MPCM32:self_gain": {
+            "unit": "1",
+            "reference": "DUT.MPCM32:self_gain",
+            "comment": "self_gain of MPCM32"
+        },
+        "MPCM33:gm": {
+            "unit": "S",
+            "reference": "DUT.MPCM33:gm",
+            "comment": "gm of MPCM33"
+        },
+        "MPCM33:gds": {
+            "unit": "S",
+            "reference": "DUT.MPCM33:gds",
+            "comment": "gds of MPCM33"
+        },
+        "MPCM33:id": {
+            "unit": "A",
+            "reference": "DUT.MPCM33:id",
+            "comment": "id of MPCM33"
+        },
+        "MPCM33:gmoverid": {
+            "unit": "1/V",
+            "reference": "DUT.MPCM33:gmoverid",
+            "comment": "gmoverid of MPCM33"
+        },
+        "MPCM33:fug": {
+            "unit": "Hz",
+            "reference": "DUT.MPCM33:fug",
+            "comment": "fug of MPCM33"
+        },
+        "MPCM33:vdsat": {
+            "unit": "V",
+            "reference": "DUT.MPCM33:vdsat",
+            "comment": "vdsat of MPCM33"
+        },
+        "MPCM33:vgs": {
+            "unit": "V",
+            "reference": "DUT.MPCM33:vgs",
+            "comment": "vgs of MPCM33"
+        },
+        "MPCM33:vds": {
+            "unit": "V",
+            "reference": "DUT.MPCM33:vds",
+            "comment": "vds of MPCM33"
+        },
+        "MPCM33:vbs": {
+            "unit": "V",
+            "reference": "DUT.MPCM33:vbs",
+            "comment": "vbs of MPCM33"
+        },
+        "MPCM33:gmb": {
+            "unit": "S",
+            "reference": "DUT.MPCM33:gmb",
+            "comment": "gmb of MPCM33"
+        },
+        "MPCM33:vth": {
+            "unit": "V",
+            "reference": "DUT.MPCM33:vth",
+            "comment": "vth of MPCM33"
+        },
+        "MPCM33:self_gain": {
+            "unit": "1",
+            "reference": "DUT.MPCM33:self_gain",
+            "comment": "self_gain of MPCM33"
+        },
+        "MPCM34:gm": {
+            "unit": "S",
+            "reference": "DUT.MPCM34:gm",
+            "comment": "gm of MPCM34"
+        },
+        "MPCM34:gds": {
+            "unit": "S",
+            "reference": "DUT.MPCM34:gds",
+            "comment": "gds of MPCM34"
+        },
+        "MPCM34:id": {
+            "unit": "A",
+            "reference": "DUT.MPCM34:id",
+            "comment": "id of MPCM34"
+        },
+        "MPCM34:gmoverid": {
+            "unit": "1/V",
+            "reference": "DUT.MPCM34:gmoverid",
+            "comment": "gmoverid of MPCM34"
+        },
+        "MPCM34:fug": {
+            "unit": "Hz",
+            "reference": "DUT.MPCM34:fug",
+            "comment": "fug of MPCM34"
+        },
+        "MPCM34:vdsat": {
+            "unit": "V",
+            "reference": "DUT.MPCM34:vdsat",
+            "comment": "vdsat of MPCM34"
+        },
+        "MPCM34:vgs": {
+            "unit": "V",
+            "reference": "DUT.MPCM34:vgs",
+            "comment": "vgs of MPCM34"
+        },
+        "MPCM34:vds": {
+            "unit": "V",
+            "reference": "DUT.MPCM34:vds",
+            "comment": "vds of MPCM34"
+        },
+        "MPCM34:vbs": {
+            "unit": "V",
+            "reference": "DUT.MPCM34:vbs",
+            "comment": "vbs of MPCM34"
+        },
+        "MPCM34:gmb": {
+            "unit": "S",
+            "reference": "DUT.MPCM34:gmb",
+            "comment": "gmb of MPCM34"
+        },
+        "MPCM34:vth": {
+            "unit": "V",
+            "reference": "DUT.MPCM34:vth",
+            "comment": "vth of MPCM34"
+        },
+        "MPCM34:self_gain": {
+            "unit": "1",
+            "reference": "DUT.MPCM34:self_gain",
+            "comment": "self_gain of MPCM34"
+        },
+        "MNLS12:gm": {
+            "unit": "S",
+            "reference": "DUT.MNLS12:gm",
+            "comment": "gm of MNLS12"
+        },
+        "MNLS12:gds": {
+            "unit": "S",
+            "reference": "DUT.MNLS12:gds",
+            "comment": "gds of MNLS12"
+        },
+        "MNLS12:id": {
+            "unit": "A",
+            "reference": "DUT.MNLS12:id",
+            "comment": "id of MNLS12"
+        },
+        "MNLS12:gmoverid": {
+            "unit": "1/V",
+            "reference": "DUT.MNLS12:gmoverid",
+            "comment": "gmoverid of MNLS12"
+        },
+        "MNLS12:fug": {
+            "unit": "Hz",
+            "reference": "DUT.MNLS12:fug",
+            "comment": "fug of MNLS12"
+        },
+        "MNLS12:vdsat": {
+            "unit": "V",
+            "reference": "DUT.MNLS12:vdsat",
+            "comment": "vdsat of MNLS12"
+        },
+        "MNLS12:vgs": {
+            "unit": "V",
+            "reference": "DUT.MNLS12:vgs",
+            "comment": "vgs of MNLS12"
+        },
+        "MNLS12:vds": {
+            "unit": "V",
+            "reference": "DUT.MNLS12:vds",
+            "comment": "vds of MNLS12"
+        },
+        "MNLS12:vbs": {
+            "unit": "V",
+            "reference": "DUT.MNLS12:vbs",
+            "comment": "vbs of MNLS12"
+        },
+        "MNLS12:gmb": {
+            "unit": "S",
+            "reference": "DUT.MNLS12:gmb",
+            "comment": "gmb of MNLS12"
+        },
+        "MNLS12:vth": {
+            "unit": "V",
+            "reference": "DUT.MNLS12:vth",
+            "comment": "vth of MNLS12"
+        },
+        "MNLS12:self_gain": {
+            "unit": "1",
+            "reference": "DUT.MNLS12:self_gain",
+            "comment": "self_gain of MNLS12"
+        },
+        "MNLS11:gm": {
+            "unit": "S",
+            "reference": "DUT.MNLS11:gm",
+            "comment": "gm of MNLS11"
+        },
+        "MNLS11:gds": {
+            "unit": "S",
+            "reference": "DUT.MNLS11:gds",
+            "comment": "gds of MNLS11"
+        },
+        "MNLS11:id": {
+            "unit": "A",
+            "reference": "DUT.MNLS11:id",
+            "comment": "id of MNLS11"
+        },
+        "MNLS11:gmoverid": {
+            "unit": "1/V",
+            "reference": "DUT.MNLS11:gmoverid",
+            "comment": "gmoverid of MNLS11"
+        },
+        "MNLS11:fug": {
+            "unit": "Hz",
+            "reference": "DUT.MNLS11:fug",
+            "comment": "fug of MNLS11"
+        },
+        "MNLS11:vdsat": {
+            "unit": "V",
+            "reference": "DUT.MNLS11:vdsat",
+            "comment": "vdsat of MNLS11"
+        },
+        "MNLS11:vgs": {
+            "unit": "V",
+            "reference": "DUT.MNLS11:vgs",
+            "comment": "vgs of MNLS11"
+        },
+        "MNLS11:vds": {
+            "unit": "V",
+            "reference": "DUT.MNLS11:vds",
+            "comment": "vds of MNLS11"
+        },
+        "MNLS11:vbs": {
+            "unit": "V",
+            "reference": "DUT.MNLS11:vbs",
+            "comment": "vbs of MNLS11"
+        },
+        "MNLS11:gmb": {
+            "unit": "S",
+            "reference": "DUT.MNLS11:gmb",
+            "comment": "gmb of MNLS11"
+        },
+        "MNLS11:vth": {
+            "unit": "V",
+            "reference": "DUT.MNLS11:vth",
+            "comment": "vth of MNLS11"
+        },
+        "MNLS11:self_gain": {
+            "unit": "1",
+            "reference": "DUT.MNLS11:self_gain",
+            "comment": "self_gain of MNLS11"
+        },
+        "MNR1:gm": {
+            "unit": "S",
+            "reference": "DUT.MNR1:gm",
+            "comment": "gm of MNR1"
+        },
+        "MNR1:gds": {
+            "unit": "S",
+            "reference": "DUT.MNR1:gds",
+            "comment": "gds of MNR1"
+        },
+        "MNR1:id": {
+            "unit": "A",
+            "reference": "DUT.MNR1:id",
+            "comment": "id of MNR1"
+        },
+        "MNR1:gmoverid": {
+            "unit": "1/V",
+            "reference": "DUT.MNR1:gmoverid",
+            "comment": "gmoverid of MNR1"
+        },
+        "MNR1:fug": {
+            "unit": "Hz",
+            "reference": "DUT.MNR1:fug",
+            "comment": "fug of MNR1"
+        },
+        "MNR1:vdsat": {
+            "unit": "V",
+            "reference": "DUT.MNR1:vdsat",
+            "comment": "vdsat of MNR1"
+        },
+        "MNR1:vgs": {
+            "unit": "V",
+            "reference": "DUT.MNR1:vgs",
+            "comment": "vgs of MNR1"
+        },
+        "MNR1:vds": {
+            "unit": "V",
+            "reference": "DUT.MNR1:vds",
+            "comment": "vds of MNR1"
+        },
+        "MNR1:vbs": {
+            "unit": "V",
+            "reference": "DUT.MNR1:vbs",
+            "comment": "vbs of MNR1"
+        },
+        "MNR1:gmb": {
+            "unit": "S",
+            "reference": "DUT.MNR1:gmb",
+            "comment": "gmb of MNR1"
+        },
+        "MNR1:vth": {
+            "unit": "V",
+            "reference": "DUT.MNR1:vth",
+            "comment": "vth of MNR1"
+        },
+        "MNR1:self_gain": {
+            "unit": "1",
+            "reference": "DUT.MNR1:self_gain",
+            "comment": "self_gain of MNR1"
+        },
+        "MPR2:gm": {
+            "unit": "S",
+            "reference": "DUT.MPR2:gm",
+            "comment": "gm of MPR2"
+        },
+        "MPR2:gds": {
+            "unit": "S",
+            "reference": "DUT.MPR2:gds",
+            "comment": "gds of MPR2"
+        },
+        "MPR2:id": {
+            "unit": "A",
+            "reference": "DUT.MPR2:id",
+            "comment": "id of MPR2"
+        },
+        "MPR2:gmoverid": {
+            "unit": "1/V",
+            "reference": "DUT.MPR2:gmoverid",
+            "comment": "gmoverid of MPR2"
+        },
+        "MPR2:fug": {
+            "unit": "Hz",
+            "reference": "DUT.MPR2:fug",
+            "comment": "fug of MPR2"
+        },
+        "MPR2:vdsat": {
+            "unit": "V",
+            "reference": "DUT.MPR2:vdsat",
+            "comment": "vdsat of MPR2"
+        },
+        "MPR2:vgs": {
+            "unit": "V",
+            "reference": "DUT.MPR2:vgs",
+            "comment": "vgs of MPR2"
+        },
+        "MPR2:vds": {
+            "unit": "V",
+            "reference": "DUT.MPR2:vds",
+            "comment": "vds of MPR2"
+        },
+        "MPR2:vbs": {
+            "unit": "V",
+            "reference": "DUT.MPR2:vbs",
+            "comment": "vbs of MPR2"
+        },
+        "MPR2:gmb": {
+            "unit": "S",
+            "reference": "DUT.MPR2:gmb",
+            "comment": "gmb of MPR2"
+        },
+        "MPR2:vth": {
+            "unit": "V",
+            "reference": "DUT.MPR2:vth",
+            "comment": "vth of MPR2"
+        },
+        "MPR2:self_gain": {
+            "unit": "1",
+            "reference": "DUT.MPR2:self_gain",
+            "comment": "self_gain of MPR2"
+        },
+        "B":{
+          "unit":"V",
+          "reference":"DUT.B",
+          "comment" : "Voltage at node B"
+        },
+        "CM":{
+          "unit":"V",
+          "reference":"DUT.CM",
+          "comment" : "Voltage at node CM"
+        },
+        "S":{
+          "unit":"V",
+          "reference":"DUT.S",
+          "comment" : "Voltage at node S"
+        },
+        "T":{
+          "unit":"V",
+          "reference":"DUT.T",
+          "comment" : "Voltage at node T"
+        },
+        "U":{
+          "unit":"V",
+          "reference":"DUT.U",
+          "comment" : "Voltage at node U"
+        },
+        "V":{
+          "unit":"V",
+          "reference":"DUT.V",
+          "comment" : "Voltage at node V"
+        },
+        "W":{
+          "unit":"V",
+          "reference":"DUT.W",
+          "comment" : "Voltage at node W"
+        },
+        "X":{
+          "unit":"V",
+          "reference":"DUT.X",
+          "comment" : "Voltage at node X"
+        },
+        "Y":{
+          "unit":"V",
+          "reference":"DUT.Y",
+          "comment" : "Voltage at node Y"
+        },
+        "Z":{
+          "unit":"V",
+          "reference":"DUT.Z",
+          "comment" : "Voltage at node Z"
+        },
+        "idd":{
+          "unit":"A",
+          "reference":"DUT:VDD",
+          "comment" : "positive supply current"
+        },
+        "iss":{
+          "unit":"A",
+          "reference":"DUT:VSS",
+          "comment" : "negative supply current"
+        },
+        "A":{
+          "unit":"um²",
+          "comment" : "estimated area"
+        }
+      },
+
+      "dcmatch":
+      {
+        "voff_stat":{
+          "unit":"V",
+          "reference":"totalOutput.sigmaOut",
+          "comment" : "Statistical Offset"
+        },
+        "voff_sys":{
+          "unit":"Hz",
+          "reference":"totalOutput.dcOp",
+          "comment" : "Systematic Offset"
+        },
+        "MND11/dvthn/contribution":{
+            "unit": "v",
+            "reference": "DUT.MND11.dvthn(m).Contribution",
+        },
+        "MND11/dvthn/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MND11.dvthn(m).Sensitivity",
+        },
+        "MND11/toxn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MND11.toxn(m).Contribution",
+        },
+        "MND11/toxn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MND11.toxn(m).Sensitivity",
+        },
+        "MND11/dxln/contribution":{
+            "unit": "1",
+            "reference": "DUT.MND11.dxln(m).Contribution",
+        },
+        "MND11/dxln/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MND11.dxln(m).Sensitivity",
+        },
+        "MND11/dxwn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MND11.dxwn(m).Contribution",
+        },
+        "MND11/dxwn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MND11.dxwn(m).Sensitivity",
+        },
+        "MND11/hdifn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MND11.hdifn(m).Contribution",
+        },
+        "MND11/hdifn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MND11.hdifn(m).Sensitivity",
+        },
+        "MND12/dvthn/contribution":{
+            "unit": "v",
+            "reference": "DUT.MND12.dvthn(m).Contribution",
+        },
+        "MND12/dvthn/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MND12.dvthn(m).Sensitivity",
+        },
+        "MND12/toxn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MND12.toxn(m).Contribution",
+        },
+        "MND12/toxn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MND12.toxn(m).Sensitivity",
+        },
+        "MND12/dxln/contribution":{
+            "unit": "1",
+            "reference": "DUT.MND12.dxln(m).Contribution",
+        },
+        "MND12/dxln/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MND12.dxln(m).Sensitivity",
+        },
+        "MND12/dxwn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MND12.dxwn(m).Contribution",
+        },
+        "MND12/dxwn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MND12.dxwn(m).Sensitivity",
+        },
+        "MND12/hdifn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MND12.hdifn(m).Contribution",
+        },
+        "MND12/hdifn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MND12.hdifn(m).Sensitivity",
+        },
+        "MNCM11/dvthn/contribution":{
+            "unit": "v",
+            "reference": "DUT.MNCM11.dvthn(m).Contribution",
+        },
+        "MNCM11/dvthn/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MNCM11.dvthn(m).Sensitivity",
+        },
+        "MNCM11/toxn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM11.toxn(m).Contribution",
+        },
+        "MNCM11/toxn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM11.toxn(m).Sensitivity",
+        },
+        "MNCM11/dxln/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM11.dxln(m).Contribution",
+        },
+        "MNCM11/dxln/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM11.dxln(m).Sensitivity",
+        },
+        "MNCM11/dxwn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM11.dxwn(m).Contribution",
+        },
+        "MNCM11/dxwn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM11.dxwn(m).Sensitivity",
+        },
+        "MNCM11/hdifn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM11.hdifn(m).Contribution",
+        },
+        "MNCM11/hdifn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM11.hdifn(m).Sensitivity",
+        },
+        "MNCM12/dvthn/contribution":{
+            "unit": "v",
+            "reference": "DUT.MNCM12.dvthn(m).Contribution",
+        },
+        "MNCM12/dvthn/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MNCM12.dvthn(m).Sensitivity",
+        },
+        "MNCM12/toxn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM12.toxn(m).Contribution",
+        },
+        "MNCM12/toxn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM12.toxn(m).Sensitivity",
+        },
+        "MNCM12/dxln/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM12.dxln(m).Contribution",
+        },
+        "MNCM12/dxln/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM12.dxln(m).Sensitivity",
+        },
+        "MNCM12/dxwn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM12.dxwn(m).Contribution",
+        },
+        "MNCM12/dxwn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM12.dxwn(m).Sensitivity",
+        },
+        "MNCM12/hdifn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM12.hdifn(m).Contribution",
+        },
+        "MNCM12/hdifn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM12.hdifn(m).Sensitivity",
+        },
+        "MPCM21/dvthp/contribution":{
+            "unit": "v",
+            "reference": "DUT.MPCM21.dvthp(m).Contribution",
+        },
+        "MPCM21/dvthp/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MPCM21.dvthp(m).Sensitivity",
+        },
+        "MPCM21/toxp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM21.toxp(m).Contribution",
+        },
+        "MPCM21/toxp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM21.toxp(m).Sensitivity",
+        },
+        "MPCM21/dxlp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM21.dxlp(m).Contribution",
+        },
+        "MPCM21/dxlp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM21.dxlp(m).Sensitivity",
+        },
+        "MPCM21/dxwp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM21.dxwp(m).Contribution",
+        },
+        "MPCM21/dxwp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM21.dxwp(m).Sensitivity",
+        },
+        "MPCM21/hdifp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM21.hdifp(m).Contribution",
+        },
+        "MPCM21/hdifp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM21.hdifp(m).Sensitivity",
+        },
+        "MPCM22/dvthp/contribution":{
+            "unit": "v",
+            "reference": "DUT.MPCM22.dvthp(m).Contribution",
+        },
+        "MPCM22/dvthp/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MPCM22.dvthp(m).Sensitivity",
+        },
+        "MPCM22/toxp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM22.toxp(m).Contribution",
+        },
+        "MPCM22/toxp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM22.toxp(m).Sensitivity",
+        },
+        "MPCM22/dxlp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM22.dxlp(m).Contribution",
+        },
+        "MPCM22/dxlp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM22.dxlp(m).Sensitivity",
+        },
+        "MPCM22/dxwp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM22.dxwp(m).Contribution",
+        },
+        "MPCM22/dxwp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM22.dxwp(m).Sensitivity",
+        },
+        "MPCM22/hdifp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM22.hdifp(m).Contribution",
+        },
+        "MPCM22/hdifp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM22.hdifp(m).Sensitivity",
+        },
+        "MNCM41/dvthn/contribution":{
+            "unit": "v",
+            "reference": "DUT.MNCM41.dvthn(m).Contribution",
+        },
+        "MNCM41/dvthn/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MNCM41.dvthn(m).Sensitivity",
+        },
+        "MNCM41/toxn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM41.toxn(m).Contribution",
+        },
+        "MNCM41/toxn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM41.toxn(m).Sensitivity",
+        },
+        "MNCM41/dxln/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM41.dxln(m).Contribution",
+        },
+        "MNCM41/dxln/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM41.dxln(m).Sensitivity",
+        },
+        "MNCM41/dxwn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM41.dxwn(m).Contribution",
+        },
+        "MNCM41/dxwn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM41.dxwn(m).Sensitivity",
+        },
+        "MNCM41/hdifn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM41.hdifn(m).Contribution",
+        },
+        "MNCM41/hdifn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM41.hdifn(m).Sensitivity",
+        },
+        "MNCM42/dvthn/contribution":{
+            "unit": "v",
+            "reference": "DUT.MNCM42.dvthn(m).Contribution",
+        },
+        "MNCM42/dvthn/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MNCM42.dvthn(m).Sensitivity",
+        },
+        "MNCM42/toxn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM42.toxn(m).Contribution",
+        },
+        "MNCM42/toxn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM42.toxn(m).Sensitivity",
+        },
+        "MNCM42/dxln/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM42.dxln(m).Contribution",
+        },
+        "MNCM42/dxln/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM42.dxln(m).Sensitivity",
+        },
+        "MNCM42/dxwn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM42.dxwn(m).Contribution",
+        },
+        "MNCM42/dxwn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM42.dxwn(m).Sensitivity",
+        },
+        "MNCM42/hdifn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM42.hdifn(m).Contribution",
+        },
+        "MNCM42/hdifn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM42.hdifn(m).Sensitivity",
+        },
+        "MNCM43/dvthn/contribution":{
+            "unit": "v",
+            "reference": "DUT.MNCM43.dvthn(m).Contribution",
+        },
+        "MNCM43/dvthn/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MNCM43.dvthn(m).Sensitivity",
+        },
+        "MNCM43/toxn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM43.toxn(m).Contribution",
+        },
+        "MNCM43/toxn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM43.toxn(m).Sensitivity",
+        },
+        "MNCM43/dxln/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM43.dxln(m).Contribution",
+        },
+        "MNCM43/dxln/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM43.dxln(m).Sensitivity",
+        },
+        "MNCM43/dxwn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM43.dxwn(m).Contribution",
+        },
+        "MNCM43/dxwn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM43.dxwn(m).Sensitivity",
+        },
+        "MNCM43/hdifn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM43.hdifn(m).Contribution",
+        },
+        "MNCM43/hdifn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM43.hdifn(m).Sensitivity",
+        },
+        "MNCM44/dvthn/contribution":{
+            "unit": "v",
+            "reference": "DUT.MNCM44.dvthn(m).Contribution",
+        },
+        "MNCM44/dvthn/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MNCM44.dvthn(m).Sensitivity",
+        },
+        "MNCM44/toxn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM44.toxn(m).Contribution",
+        },
+        "MNCM44/toxn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM44.toxn(m).Sensitivity",
+        },
+        "MNCM44/dxln/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM44.dxln(m).Contribution",
+        },
+        "MNCM44/dxln/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM44.dxln(m).Sensitivity",
+        },
+        "MNCM44/dxwn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM44.dxwn(m).Contribution",
+        },
+        "MNCM44/dxwn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM44.dxwn(m).Sensitivity",
+        },
+        "MNCM44/hdifn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNCM44.hdifn(m).Contribution",
+        },
+        "MNCM44/hdifn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNCM44.hdifn(m).Sensitivity",
+        },
+        "MPCM31/dvthp/contribution":{
+            "unit": "v",
+            "reference": "DUT.MPCM31.dvthp(m).Contribution",
+        },
+        "MPCM31/dvthp/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MPCM31.dvthp(m).Sensitivity",
+        },
+        "MPCM31/toxp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM31.toxp(m).Contribution",
+        },
+        "MPCM31/toxp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM31.toxp(m).Sensitivity",
+        },
+        "MPCM31/dxlp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM31.dxlp(m).Contribution",
+        },
+        "MPCM31/dxlp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM31.dxlp(m).Sensitivity",
+        },
+        "MPCM31/dxwp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM31.dxwp(m).Contribution",
+        },
+        "MPCM31/dxwp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM31.dxwp(m).Sensitivity",
+        },
+        "MPCM31/hdifp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM31.hdifp(m).Contribution",
+        },
+        "MPCM31/hdifp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM31.hdifp(m).Sensitivity",
+        },
+        "MPCM32/dvthp/contribution":{
+            "unit": "v",
+            "reference": "DUT.MPCM32.dvthp(m).Contribution",
+        },
+        "MPCM32/dvthp/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MPCM32.dvthp(m).Sensitivity",
+        },
+        "MPCM32/toxp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM32.toxp(m).Contribution",
+        },
+        "MPCM32/toxp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM32.toxp(m).Sensitivity",
+        },
+        "MPCM32/dxlp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM32.dxlp(m).Contribution",
+        },
+        "MPCM32/dxlp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM32.dxlp(m).Sensitivity",
+        },
+        "MPCM32/dxwp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM32.dxwp(m).Contribution",
+        },
+        "MPCM32/dxwp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM32.dxwp(m).Sensitivity",
+        },
+        "MPCM32/hdifp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM32.hdifp(m).Contribution",
+        },
+        "MPCM32/hdifp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM32.hdifp(m).Sensitivity",
+        },
+        "MPCM33/dvthp/contribution":{
+            "unit": "v",
+            "reference": "DUT.MPCM33.dvthp(m).Contribution",
+        },
+        "MPCM33/dvthp/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MPCM33.dvthp(m).Sensitivity",
+        },
+        "MPCM33/toxp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM33.toxp(m).Contribution",
+        },
+        "MPCM33/toxp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM33.toxp(m).Sensitivity",
+        },
+        "MPCM33/dxlp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM33.dxlp(m).Contribution",
+        },
+        "MPCM33/dxlp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM33.dxlp(m).Sensitivity",
+        },
+        "MPCM33/dxwp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM33.dxwp(m).Contribution",
+        },
+        "MPCM33/dxwp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM33.dxwp(m).Sensitivity",
+        },
+        "MPCM33/hdifp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM33.hdifp(m).Contribution",
+        },
+        "MPCM33/hdifp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM33.hdifp(m).Sensitivity",
+        },
+        "MPCM34/dvthp/contribution":{
+            "unit": "v",
+            "reference": "DUT.MPCM34.dvthp(m).Contribution",
+        },
+        "MPCM34/dvthp/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MPCM34.dvthp(m).Sensitivity",
+        },
+        "MPCM34/toxp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM34.toxp(m).Contribution",
+        },
+        "MPCM34/toxp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM34.toxp(m).Sensitivity",
+        },
+        "MPCM34/dxlp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM34.dxlp(m).Contribution",
+        },
+        "MPCM34/dxlp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM34.dxlp(m).Sensitivity",
+        },
+        "MPCM34/dxwp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM34.dxwp(m).Contribution",
+        },
+        "MPCM34/dxwp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM34.dxwp(m).Sensitivity",
+        },
+        "MPCM34/hdifp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPCM34.hdifp(m).Contribution",
+        },
+        "MPCM34/hdifp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPCM34.hdifp(m).Sensitivity",
+        },
+        "MNLS12/dvthn/contribution":{
+            "unit": "v",
+            "reference": "DUT.MNLS12.dvthn(m).Contribution",
+        },
+        "MNLS12/dvthn/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MNLS12.dvthn(m).Sensitivity",
+        },
+        "MNLS12/toxn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNLS12.toxn(m).Contribution",
+        },
+        "MNLS12/toxn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNLS12.toxn(m).Sensitivity",
+        },
+        "MNLS12/dxln/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNLS12.dxln(m).Contribution",
+        },
+        "MNLS12/dxln/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNLS12.dxln(m).Sensitivity",
+        },
+        "MNLS12/dxwn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNLS12.dxwn(m).Contribution",
+        },
+        "MNLS12/dxwn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNLS12.dxwn(m).Sensitivity",
+        },
+        "MNLS12/hdifn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNLS12.hdifn(m).Contribution",
+        },
+        "MNLS12/hdifn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNLS12.hdifn(m).Sensitivity",
+        },
+        "MNLS11/dvthn/contribution":{
+            "unit": "v",
+            "reference": "DUT.MNLS11.dvthn(m).Contribution",
+        },
+        "MNLS11/dvthn/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MNLS11.dvthn(m).Sensitivity",
+        },
+        "MNLS11/toxn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNLS11.toxn(m).Contribution",
+        },
+        "MNLS11/toxn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNLS11.toxn(m).Sensitivity",
+        },
+        "MNLS11/dxln/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNLS11.dxln(m).Contribution",
+        },
+        "MNLS11/dxln/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNLS11.dxln(m).Sensitivity",
+        },
+        "MNLS11/dxwn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNLS11.dxwn(m).Contribution",
+        },
+        "MNLS11/dxwn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNLS11.dxwn(m).Sensitivity",
+        },
+        "MNLS11/hdifn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNLS11.hdifn(m).Contribution",
+        },
+        "MNLS11/hdifn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNLS11.hdifn(m).Sensitivity",
+        },
+        "MNR1/dvthn/contribution":{
+            "unit": "v",
+            "reference": "DUT.MNR1.dvthn(m).Contribution",
+        },
+        "MNR1/dvthn/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MNR1.dvthn(m).Sensitivity",
+        },
+        "MNR1/toxn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNR1.toxn(m).Contribution",
+        },
+        "MNR1/toxn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNR1.toxn(m).Sensitivity",
+        },
+        "MNR1/dxln/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNR1.dxln(m).Contribution",
+        },
+        "MNR1/dxln/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNR1.dxln(m).Sensitivity",
+        },
+        "MNR1/dxwn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNR1.dxwn(m).Contribution",
+        },
+        "MNR1/dxwn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNR1.dxwn(m).Sensitivity",
+        },
+        "MNR1/hdifn/contribution":{
+            "unit": "1",
+            "reference": "DUT.MNR1.hdifn(m).Contribution",
+        },
+        "MNR1/hdifn/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MNR1.hdifn(m).Sensitivity",
+        },
+        "MPR2/dvthp/contribution":{
+            "unit": "v",
+            "reference": "DUT.MPR2.dvthp(m).Contribution",
+        },
+        "MPR2/dvthp/sensitivity":{
+            "unit": "v",
+            "reference": "DUT.MPR2.dvthp(m).Sensitivity",
+        },
+        "MPR2/toxp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPR2.toxp(m).Contribution",
+        },
+        "MPR2/toxp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPR2.toxp(m).Sensitivity",
+        },
+        "MPR2/dxlp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPR2.dxlp(m).Contribution",
+        },
+        "MPR2/dxlp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPR2.dxlp(m).Sensitivity",
+        },
+        "MPR2/dxwp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPR2.dxwp(m).Contribution",
+        },
+        "MPR2/dxwp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPR2.dxwp(m).Sensitivity",
+        },
+        "MPR2/hdifp/contribution":{
+            "unit": "1",
+            "reference": "DUT.MPR2.hdifp(m).Contribution",
+        },
+        "MPR2/hdifp/sensitivity":{
+            "unit": "1",
+            "reference": "DUT.MPR2.hdifp(m).Sensitivity",
+        }
+      },
+
+      "stb":
+      {
+        "a_0":{
+          "unit":"dB",
+          "comment" : "DC Gain"
+        },
+        "ugbw":{
+          "unit":"Hz",
+          "comment" : "Unity-Gain Bandwidth"
+        },
+        "cof":{
+          "unit":"Hz",
+          "comment" : "crossover frequency"
+        },
+        "pm":{
+          "unit":"deg",
+          "comment" : "Phase-Margin"
+        },
+        "gm":{
+          "unit":"dB",
+          "comment" : "Gain-Margin"
+        }
+      },
+
+      "tran":
+      {
+        "sr_r":{
+          "unit":"V/s",
+          "comment" : "rising slew-rate"
+        },
+        "overshoot_r":{
+          "unit":"1",
+          "comment" : "rising overshoot"
+        },
+        "sr_f":{
+          "unit":"V/s",
+          "comment" : "falling slew-rate"
+        },
+        "overshoot_f":{
+          "unit":"1",
+          "comment" : "falling overshoot"
+        }
+      },
+
+      "noise":
+      {
+        "vn_1Hz":{
+          "unit":"V^2/Hz",
+          "comment" : "output noise density at 1 Hz" 
+        },
+        "vn_10Hz":{
+          "unit":"V^2/Hz",
+          "comment" : "output noise density at 10 Hz" 
+        },
+        "vn_100Hz":{
+          "unit":"V^2/Hz",
+          "comment" : "output noise density at 100 Hz" 
+        },
+        "vn_1kHz":{
+          "unit":"V^2/Hz",
+          "comment" : "output noise density at 1 kHz" 
+        },
+        "vn_10kHz":{
+          "unit":"V^2/Hz",
+          "comment" : "output noise density at 10 kHz" 
+        },
+        "vn_100kHz":{
+          "unit":"V^2/Hz",
+          "comment" : "output noise density at 100 kHz" 
+        }
+      },
+
+      "dc1":
+      {
+        "v_ol":{
+          "unit":"V",
+          "comment" : "minimal output voltage" 
+        },
+        "v_oh":{
+          "unit":"V",
+          "comment" : "maximal output voltage" 
+        }
+      },
+
+      "xf":
+      {
+        "psrr_p":{
+          "unit":"dB",
+          "comment" : "power supply rejection ration wrt. to the positive supply rail" 
+        },
+        "psrr_n":{
+          "unit":"dB",
+          "comment" : "power supply rejection ration wrt. to the negative supply rail" 
+        },
+        "cmrr":{
+          "unit":"dB",
+          "comment" : "common mode rejection ration" 
+        }
+      },
+
+      "ac":
+      {
+        "v_il":{
+          "unit":"V",
+          "comment" : "minimal input voltage" 
+        },
+        "v_ih":{
+          "unit":"V",
+          "comment" : "maximal input voltage" 
+        }
+      },
+
+      "dc3":
+      {
+        "i_out_min":{
+          "unit":"A",
+          "comment" : "minimal output current" 
+        }
+      },
+
+      "dc4":
+      {
+        "i_out_max":{
+          "unit":"A",
+          "comment" : "maximal output current" 
+        }
+      }
+    }
+  }
+}
