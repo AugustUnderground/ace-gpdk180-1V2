@@ -19,7 +19,7 @@
       "comment":"biasing current"
     },
     "vsup":{
-      "init":1.2,
+      "init":1.8,
       "comment":"supply voltage"
     },
     "Lcm1":{

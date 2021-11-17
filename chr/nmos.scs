@@ -4,7 +4,7 @@
 simulator lang=spectre
 global 0
 
-parameters L=0.18 Vb=0.0 Vg=0.0 Vd=0.0 Vs=0.0 W=20 Vdd=1.2
+parameters L=0.18 Vb=0.0 Vg=0.0 Vd=0.0 Vs=0.0 W=20 Vdd=1.8
 
 include "nmos1.scs" section=stat
 

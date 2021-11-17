@@ -6,7 +6,7 @@ global 0
 include "nmos1.scs" section=stat
 include "pmos1.scs" section=stat
 
-parameters vs=100m vi=0 vsup=1.2 vcm=0 vo=0 vid=0 vicm=0                    \
+parameters vs=100m vi=0 vsup=1.8 vcm=0 vo=0 vid=0 vicm=0                    \
            a0=1 cl=5p fin=1k i0=3u rl=100M                                  \
            Lcm1=0.4 Lcm2=0.4 Lcs=0.4 Ld=0.4 Lc1=1.5 Lr1=1.0                 \
            Wcm1=3.0 Wcm2=3.0 Wcs=3.0 Wd=3.0 Wc1=6.8 Wr1=3.0                 \

@@ -1,14 +1,14 @@
-# ace-gpdk180-1V2
+# ace-gpdk180-1V8
 
 ## Introduction
 
 The circuits in this repository are backends for
-[AC²E](https://github.com/matthschw/ace) in Cadence GPDK 180nm (1.2V).
+[AC²E](https://github.com/matthschw/ace) in Cadence GPDK 180nm (1.8V).
 
 ## Installation
 
 ```
-$ git clone  https://github.com/augustunderground/ace-gpdk180-1V2.git
+$ git clone  https://github.com/augustunderground/ace-gpdk180-1V8.git
 ```
 
 After cloning make sure to adjust the `pdk` symlink to suit your system.

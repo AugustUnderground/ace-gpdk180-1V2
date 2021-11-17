@@ -6,7 +6,7 @@ global 0
 include "nmos1.scs" section=nom
 include "pmos1.scs" section=nom
 
-parameters T2=100p cl=100f T1=1 vdd=1.2                     \
+parameters T2=100p cl=100f T1=1 vdd=1.8                     \
            Ln=0.18                 Lp=0.18                  \
            Wn0=4.0 Wn1=6.0 Wn2=2.0 Wp0=8.0 Wp1=12.0 Wp2=4.0
 

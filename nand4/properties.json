@@ -3,7 +3,7 @@
   "parameters":
   {
     "vdd":{
-      "init":1.2,
+      "init":1.8,
       "comment":"supply voltage"
     },
     "Wn3":{
