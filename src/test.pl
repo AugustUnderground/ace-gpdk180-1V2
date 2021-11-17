@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 my @ops;
-foreach (1..6) { @ops = (@ops, "op$_"); }
+foreach (1..6, 8, 9) { @ops = (@ops, "op$_"); }
 
 my @ckts = (@ops, "nand4", "st1");
 
