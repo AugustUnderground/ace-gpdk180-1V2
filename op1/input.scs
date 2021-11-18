@@ -60,19 +60,19 @@ VICM (INCM CM) vsource type=dc dc=vicm
 
 subckt op B INP INN O VDD VSS
     //biasing current mirror
-    MNCM11  (B  B   VSS VSS) nmos1 m=Mcm11 w=Wcm1 l=Lcm1 
-    MNCM12  (CM B   VSS VSS) nmos1 m=Mcm12 w=Wcm1 l=Lcm1 
-    MNCM13  (O  B   VSS VSS) nmos1 m=Mcm13 w=Wcm1 l=Lcm1 
+    MNCM1R  (B  B   VSS VSS) nmos1 m=Mcm11 w=Wcm1 l=Lcm1 
+    MNCM1A  (CM B   VSS VSS) nmos1 m=Mcm12 w=Wcm1 l=Lcm1 
+    MNCM1B  (O  B   VSS VSS) nmos1 m=Mcm13 w=Wcm1 l=Lcm1 
 
     //diffpair
-    MND11   (Y  INP CM  VSS) nmos1 m=Md w=Wd l=Ld 
-    MND12   (X  INN CM  VSS) nmos1 m=Md w=Wd l=Ld 
+    MND1A   (Y  INP CM  VSS) nmos1 m=Md w=Wd l=Ld 
+    MND1B   (X  INN CM  VSS) nmos1 m=Md w=Wd l=Ld 
 
     //load for diffpair
-    MPCM21  (X  X   VDD VDD) pmos1 m=Mcm21 w=Wcm2 l=Lcm2 
-    MPCM22  (Y  X   VDD VDD) pmos1 m=Mcm22 w=Wcm2 l=Lcm2 
+    MPCM2R  (X  X   VDD VDD) pmos1 m=Mcm21 w=Wcm2 l=Lcm2 
+    MPCM2A  (Y  X   VDD VDD) pmos1 m=Mcm22 w=Wcm2 l=Lcm2 
 
-    MPCS    (O  Y   VDD VDD) pmos1 m=Mcs w=Wcs l=Lcs 
+    MPCS1   (O  Y   VDD VDD) pmos1 m=Mcs w=Wcs l=Lcs 
 
     //compensation network
     C0      (O  A) mimcap          area=Wcap*Wcap perim=4*Wcap
