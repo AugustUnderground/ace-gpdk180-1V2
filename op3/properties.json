@@ -1,6 +1,7 @@
 {
   "environment":"SingleEndedOpampEnvironment",
   "constraint":"Mcm212=Mcm222*Mcm32/Mcm31",
+  "ignore":true,
   "parameters":
   {
     "vs":{
