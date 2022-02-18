@@ -114,8 +114,8 @@ ac ac freq=1 param=vicm start=-vsup stop=vsup lin=1500 title="ac" annotate=no
 
 ol41 alter param=vid value=vs/2 
 ol42 alter param=vo value=-vsup/2
-dc3 dc title="dc3" title="short-l"
+dc3 dc title="dc3" title="dc3"
 
 ol51 alter param=vid value=-vs/2
 ol52 alter param=vo value=vsup/2
-dc4 dc title="dc4" title="short-h"
+dc4 dc title="dc4" title="dc4"
